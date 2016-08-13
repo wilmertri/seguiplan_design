@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>play</title>
+  <link rel="stylesheet" href="css/superslides.css">
+  <link rel="stylesheet" href="css/sp.css">
+</head>
+<body>
+ 
+ <div class="cambio">
+  <div id="slides">
+    <div class="slides-container">
+      <img src="http://lorempixel.com/400/200/nature/1" alt="">
+      <img src="http://lorempixel.com/400/200/nature/2" alt="">
+      <img src="http://lorempixel.com/400/200/nature/3" alt="">
+      <img src="http://lorempixel.com/400/200/nature/4" alt="">      
+    </div>    
+  </div>
+ </div>
+ 
+  <script src="js/jquery-3.1.0.min.js"></script>  
+  <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+  <script>	  
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true,
+        play: 5000,
+		animation_speed: 2000,
+		pagination: false,
+		animation: 'fade',
+		inherit_width_from: '.cambio',
+        inherit_height_from: '.cambio'
+      });      
+    });
+  </script>
+</body>
+</html>

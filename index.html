@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>SeguiPlan</title>
+  <link rel="stylesheet" href="css/superslides.css">
+  <link rel="stylesheet" href="css/sp.css">
+</head>
+<body class="fondo">
+   <div class="botonera">
+	  <div id="pdm">
+				<ul class="nav">				
+					<li><a href="">Menú PDM</a>
+						<ul>
+							<li><a href="">Submenu1</a></li>
+							<li><a href="">Submenu2</a></li>
+							<li><a href="">Submenu3</a></li>						
+						</ul>
+					</li>
+					<li><a href="">Formulación PDM</a>
+						<ul>
+							<li><a href="">Submenu1</a></li>
+							<li><a href="">Submenu2</a></li>
+							<li><a href="">Submenu3</a></li>
+							<li><a href="">Submenu4</a></li>
+						</ul>
+					</li>				
+				</ul>
+		</div> 
+     </div>
+   
+   <!-- Inicio Slider -->
+   <div class="conte_slides">
+	  <div id="slides">
+		<div class="slides-container">
+			<div class="descripcion">
+			  <div class="subdes">
+				<h2 class="descrip_titul">TITULO 1</h2>
+				<p class="descrip_conte">
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+			  </div>
+		   </div>
+		   <div class="descripcion">
+		     <div class="subdes">
+				<h2 class="descrip_titul">TITULO 2</h2>
+				<p class="descrip_conte">
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p>
+			  </div>
+			</div>
+			<div class="descripcion">
+			  <div class="subdes">
+				<h2 class="descrip_titul">TITULO 3</h2>
+				<p class="descrip_conte">
+				  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+				</p></div>
+			 </div>
+		</div>   
+   		<div class="descripcion">
+			<nav class="slides-navigation">
+			  <a href="#" class="next"> <img src="img/nav.svg" width="40px" height="40px" alt=">">  </a>
+			  <a href="#" class="prev"> <img class="reflejo" src="img/nav.svg" width="40px" height="40px" alt=">"> </a>
+			</nav>
+		</div>
+   </div>
+ </div> 
+ <!-- Final Slider -->
+ 
+  <script src="js/jquery-3.1.0.min.js"></script>  
+  
+  <!-- scripts para sliser Slider -->
+  <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>  
+  <script>   
+      $('#slides').superslides();
+	  
+	  $(document).on("ready", function() {
+	$('ul li:has(ul)').click(function(e) {
+		$(".dropdown-menu").not($("ul", this)).slideUp("fast")
+		.next()
+		$(this).find('ul').slideToggle("fast")
+		.end();
+	});
+});
+  </script>
+  
+ 
+</body>
+</html>
