@@ -7,7 +7,9 @@
   <link rel="stylesheet" href="css/sp.css">
 </head>
 <body class="fondo">
+  <!-- botones de arriba -->
    <div class="botonera">
+    <!-- botones menu PMD -->
 	  <div id="pdm">
 				<ul class="nav">				
 					<li><a href="">Menú PDM</a>
@@ -27,6 +29,29 @@
 					</li>				
 				</ul>
 		</div> 
+       <!-- modal de ingrso -->
+    	<div class="ingreso">
+    		<a href="#ir_a_modal">Modal</a>
+    		<div id="ir_a_modal" class="modal">
+			  <div class="modal-contenido">				
+				 <div class="bienvenida"> Bienvenido: ingrese sus datos <br> para acceder al sistema</div>
+				  <div class="ingreso_form">
+					<form action="">
+						<label for="dni">Documento</label><br>
+						<input class="caja" type="text" id="documento" size="10" maxlength="9" /><br><br>
+
+						<label for="contrasena">Contraseña</label><br>
+						<input class="caja" type="password" id="contrasena" /><br><br>
+												
+						<input class="boton" type="reset" value="CANCELAR" />						
+						<input class="boton" type="submit" value="INGRESAR" />						
+					</form>
+					<br><a href="#">cerrar</a>
+				  </div>
+				<div class="aviso">POR FAVOR VERIFIQUE SUS DATOS</div>
+			  </div>  
+			</div>			
+    	</div>
      </div>
    
    <!-- Inicio Slider -->
@@ -56,16 +81,17 @@
 				  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
 				</p></div>
 			 </div>
-		</div>   
-   		<div class="descripcion">
-			<nav class="slides-navigation">
-			  <a href="#" class="next"> <img src="img/nav.svg" width="40px" height="40px" alt=">">  </a>
-			  <a href="#" class="prev"> <img class="reflejo" src="img/nav.svg" width="40px" height="40px" alt=">"> </a>
-			</nav>
 		</div>
+			<nav class="slides-navigation">
+			  <a href="#" class="next"> <img src="img/nav_n.svg" width="40px" height="40px" alt="next"> </a>
+			  <a href="#" class="prev"> <img src="img/nav_p.svg" width="40px" height="40px" alt="prev"> </a>
+			</nav>		
    </div>
  </div> 
  <!-- Final Slider -->
+ 
+ 
+ 
  
   <script src="js/jquery-3.1.0.min.js"></script>  
   
@@ -73,15 +99,6 @@
   <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>  
   <script>   
       $('#slides').superslides();
-	  
-	  $(document).on("ready", function() {
-	$('ul li:has(ul)').click(function(e) {
-		$(".dropdown-menu").not($("ul", this)).slideUp("fast")
-		.next()
-		$(this).find('ul').slideToggle("fast")
-		.end();
-	});
-});
   </script>
   
  

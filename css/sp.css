@@ -14,6 +14,78 @@
 	font-family: sans-serif;
 }
 
+/* Modal de Registro */
+
+.ingreso{
+	float: left;
+	position: absolute;
+	right: 0;
+	margin-right: 50px;
+}
+
+.bienvenida{
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.ingreso_form{
+	width: 80%;
+	text-align: left;
+	margin: 30px 40px 20px;	
+}
+
+.ingreso_form label{
+	font-size: 22px;	
+}
+
+.caja{	
+	font-size: 25px;
+	height: 30px;
+	width: 100%;
+}
+
+.modal-contenido {
+  background-color: orangered;
+  width: 420px;
+  height: 360px; ;
+  margin: 20% auto;
+  position: relative;
+  color: #FFF;	
+  text-align: center;
+}
+.modal {
+  background-color: rgba(255,255,255,0.5);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 2s;
+}
+#ir_a_modal:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.boton{
+	background-color: dodgerblue;
+	width: 120px;
+	height: 30px;
+	margin: 10px 22px;
+	font-size: 18px;
+	color: #FFF;
+}
+
+.aviso{
+	background-color: aqua;
+	width: 100%;	
+	height: 30px;
+	color: red;
+	padding-top: 10px;
+	font-weight: bold;
+}
 /* inicio menu PDM */
 
 #pdm {
@@ -70,31 +142,27 @@ ul, ol {
 
 .botonera {	
 	position: absolute;
-	height: 400px;
+	width: 100%;
+	height: cover;
 	z-index: 26;
+	background: blue;
 }
 
-.reflejo {
--moz-transform: scaleX(-1); 
--o-transform: scaleX(-1); 
--webkit-transform: scaleX(-1); 
-transform: scaleX(-1); 
-filter: FlipH; 
-}
-
-.conte_slides {
-	
-}
+.conte_slides {}
 
 .descripcion { 
     color: #FFF;
-	margin-top: 28%;
+	margin-top: 29%;
 } 
 
 .subdes {
 	background-color: rgba(2,64,89,0.4);
 	background-repeat: no-repeat;	
     background-size: contain; 	
+}
+
+.subdes_nav {
+		
 }
 
 .descrip_titul {

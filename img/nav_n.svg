@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Creator: CorelDRAW -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xml:space="preserve"
+   width="10"
+   height="10"
+   style="fill-rule:evenodd"
+   viewBox="0 0 10 10"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="nav.svg"
+   id="svg2"><metadata
+   id="metadata15"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+   pagecolor="#ffffff"
+   bordercolor="#666666"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1280"
+   inkscape:window-height="958"
+   id="namedview13"
+   showgrid="false"
+   inkscape:zoom="15.733333"
+   inkscape:cx="10.905491"
+   inkscape:cy="14.709633"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1"
+   inkscape:current-layer="svg2" />
+ <defs
+   id="defs4">
+  <style
+   type="text/css"
+   id="style6">
+   
+    .fil0 {fill:#393185}
+   
+  </style>
+ </defs>
+ <g
+   id="Capa_x0020_1"
+   transform="scale(0.33333333,0.33333333)"
+   style="fill:#ffffff">
+  <metadata
+   id="CorelCorpID_0Corel-Layer" />
+  <sodipodi:namedview
+   id="base"
+   pagecolor="#ffffff"  
+   borderopacity="1.0"
+   inkscape:pageopacity="0.0"
+   inkscape:pageshadow="2"
+   inkscape:zoom="0.49497475"
+   inkscape:cx="489.20472"
+   inkscape:cy="755.12674"
+   inkscape:document-units="px"
+   inkscape:current-layer="layer1"
+   showgrid="false"
+   inkscape:snap-global="false"
+   inkscape:window-width="1280"
+   inkscape:window-height="958"
+   inkscape:window-x="-8"
+   inkscape:window-y="-8"
+   inkscape:window-maximized="1" />
+  <path
+   class="fil0"
+   d="M 15,0 C 23.28425,0 30,6.71575 30,15 30,23.28425 23.28425,30 15,30 6.71575,30 0,23.28425 0,15 0,6.71575 6.71575,0 15,0 z m 9.63898,15 -15.4028,-8.89252 0,17.785 15.4028,-8.89252 z M 15,2.2146 C 22.06063,2.2146 27.7854,7.9394 27.7854,15 27.7854,22.06063 22.0606,27.7854 15,27.7854 7.93937,27.7854 2.2146,22.0606 2.2146,15 2.2146,7.93937 7.9394,2.2146 15,2.2146 z"
+   id="path11"
+   inkscape:connector-curvature="0"
+   style="fill:#ffffff" />
+ </g>
+</svg>
