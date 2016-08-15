@@ -17,10 +17,20 @@
 /* Modal de Registro */
 
 .ingreso{
+	width: 100px;
+	height: 100px;
 	float: left;
 	position: absolute;
 	right: 0;
 	margin-right: 50px;
+	background-color: #024059;
+	text-align: center;
+}
+
+.ingreso img{
+	margin-top: 13px;
+	width: 70px;
+	height: 70px;
 }
 
 .bienvenida{
@@ -45,7 +55,7 @@
 }
 
 .modal-contenido {
-  background-color: orangered;
+  background-color: #024059;
   width: 420px;
   height: 360px; ;
   margin: 20% auto;
@@ -70,19 +80,27 @@
 }
 
 .boton{
-	background-color: dodgerblue;
+	background-color: #0A99C3;
 	width: 120px;
 	height: 30px;
 	margin: 10px 22px;
 	font-size: 18px;
 	color: #FFF;
+	text-align: center;
+	vertical-align: middle;
+	text-decoration: none;
+	display: inline-block;
 }
 
-.aviso{
-	background-color: aqua;
+.cerrar{
+	margin-top: 6px;
+}
+
+#aviso{
+	background-color: #79C5D9;
 	width: 100%;	
 	height: 30px;
-	color: red;
+	color: #024059;
 	padding-top: 10px;
 	font-weight: bold;
 }
@@ -105,7 +123,7 @@ ul, ol {
 
 .nav li a {
 	width: 180px;
-	background-color: rgba(2,64,89,1);
+	background-color: #024059;
 	color: #fff;
 	text-decoration: none;
 	padding: 20px 12px;
@@ -115,7 +133,7 @@ ul, ol {
 
 .nav li a:hover {
 	background-color: #FFF;
-	color: rgba(2,64,89,1);
+	color: #024059;
 }
 
 .nav li ul {
@@ -145,10 +163,7 @@ ul, ol {
 	width: 100%;
 	height: cover;
 	z-index: 26;
-	background: blue;
 }
-
-.conte_slides {}
 
 .descripcion { 
     color: #FFF;
@@ -159,10 +174,6 @@ ul, ol {
 	background-color: rgba(2,64,89,0.4);
 	background-repeat: no-repeat;	
     background-size: contain; 	
-}
-
-.subdes_nav {
-		
 }
 
 .descrip_titul {
@@ -176,7 +187,12 @@ ul, ol {
 	text-align: justify;
 }
 
-.cambio {
-   width: 300px;
-   height: 200px;
+.logo{
+	width: 100%;
+	bottom: 8%; 
+	position: absolute;
+	text-align: center;	
+	z-index: 13;
 }
+/*animation: 3s linear infinite;
+-webkit-animation: 3s linear infinite;*/
