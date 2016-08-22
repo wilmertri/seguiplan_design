@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home</title>
+  <link rel="stylesheet" href="css/superslides.css">
+  <link rel="stylesheet" href="css/sp.css">  
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+</head>
+<body class="fondo_body">
+
+<div class="contenedor_h">	
+
+	<div class="encabezado_h">
+		<h1 class="titulo_h">¡BIENVENIDO A SITESIGO!</h1>
+		<h4 class="subtitulo_h">SISTEMA DE SEGUIMIENTO A LOS RESULTADOS DE LA PLANEACION ESTRATEGICA</h4>
+	</div>
+		
+	<div class="subconten1_h">
+		<div class="user_h">
+			<div id="foto">
+				<img src="img/foto.png" alt="">
+			</div>
+			<div class="dato_nombre">
+				Bienvenido Usuario Ejemplo
+			</div>
+			<div class="dato_fecha">
+				Jueves, 14 Julio de 2016
+			</div>
+		</div>
+		<div class="logo_h">
+			<img src="img/logo.svg" alt="">
+		</div>
+	</div>
+	
+	<div class="subconten2_h">
+    	<div class="menu_h">
+    		<ul>
+    			<li><h2>Plan de desarrollo</h2><br>
+    				<img src="img/pla.svg" alt="">
+    			</li>
+    			<li><h2>Administrador</h2><br>
+    				<img src="img/adm.svg" alt="">
+    			</li>
+    			<li><h2>Usuarios</h2><br>
+    				<img src="img/use.svg" alt="">
+    			</li>
+    			<li><h2>Documentos</h2><br>
+    				<img src="img/doc.svg" alt="">
+    			</li>
+    		</ul>
+    	</div>
+	     <div class="cambio">
+		  <div id="slides">
+			<div class="slides-container">
+			  <a href="#"><img src="img/link1.svg" alt=""></a>
+			  <a href="#"><img src="img/link2.svg" alt=""></a>
+			  <a href="#"><img src="img/link3.svg" alt=""></a>     
+			</div>    
+		  </div>
+		 </div>	
+		 <div class="botones_h">
+		 	<ul>
+		 		<li><a href=""><img src="img/perfil_b.svg" alt=""></a></li>
+		 		<li><a href=""><img src="img/info_b.svg" alt=""></a></li>
+		 		<li><a href=""><img src="img/salir_b.svg" alt=""></a></li>
+		 	</ul>
+		 </div>	 
+	</div>
+</div>
+ 
+  <script src="js/jquery-3.1.0.min.js"></script>  
+  <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+  <script>	  
+    $(function() {
+      $('#slides').superslides({		  
+		inherit_width_from: '.cambio',
+        inherit_height_from: '.cambio',
+        hashchange: true,
+        play: 8000,
+		animation_speed: 800,
+		pagination: true,
+		animation: 'fade'
+      });      
+    });
+  </script>
+</body>
+</html>
