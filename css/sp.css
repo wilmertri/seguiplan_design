@@ -1,6 +1,6 @@
-/*ESTILOS COMPARTIDOS*/
+/* ------------------------------ESTILOS COMPARTIDOS ------------------------------*/
 
-* {
+*{
     margin: 0;
     padding: 0;
     border: 0;
@@ -12,7 +12,7 @@ a{
 
 .fondo_v{
 	background-color: #0378A6;
-	font-family: 'Lato', sans-serif;
+	font-family: 'Lato', sans-serif;	
 }
 
 .corpo_info{
@@ -24,9 +24,72 @@ a{
 	text-align: center;
 	padding-top: 10px;
 }
-/*ESTILOS INDEX*/
 
-.fondo {
+.encabezado_v{
+	width: 96%;
+	margin: 20px auto 10px;
+	text-align: right;
+	position: relative;
+}
+
+.titulo_v{
+	width: 50%px;
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	margin-right: 12.5%;
+}
+
+.flecha{
+	background-color: #FFF;
+	width: 50px;	
+	padding: 8.5px 2px;
+	text-align: center;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.retorno{
+	background-color: #FFF;
+	width: cover;
+	display: inline-block;
+	padding: 10px 10px;
+	font-size: 1.8em;
+	font-weight: bold;	
+	color: #024059;
+	margin-left: 10px;
+}
+
+.botones_v{
+	width: cover;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.botones_v img{
+	width: 53px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 2px;
+}
+
+.botones_v img:hover{
+	opacity: 0.6;
+}
+
+.datos_v{
+	color: #FFF;
+	display: inline-block;
+	vertical-align: top;
+	padding-top: 6px;
+	font-weight: bold;
+	font-size: 18px;
+	margin-right: 10px;
+}
+
+/* ------------------------------ ESTILOS INDEX ------------------------------ */
+
+.fondo{
     background-image: url(../img/fondo.jpg);
     background-position: center center;
     background-repeat: no-repeat;
@@ -85,6 +148,7 @@ a{
   color: #FFF;	
   text-align: center;
 }
+
 .modal {
   background-color: rgba(255,255,255,0.5);
   position: fixed;
@@ -96,6 +160,7 @@ a{
   pointer-events: none;
   transition: all 2s;
 }
+
 #ir_a_modal:target {
   opacity: 1;
   pointer-events: auto;
@@ -126,6 +191,7 @@ a{
 	padding-top: 10px;
 	font-weight: bold;
 }
+
 /* Menu PDM */
 
 #pdm {
@@ -215,7 +281,7 @@ ul, ol {
 	z-index: 13;
 }
 
-/*ESTILOS HOME*/
+/* ------------------------------ ESTILOS HOME ------------------------------ */
 
 .fondo_body {   
     background-color: #024059;
@@ -356,7 +422,33 @@ ul, ol {
 	width: 60px;
 }
 
-/* ESTILOS VISTA 1 */
+/* ------------------------------ ESTILOS VISTA 1 ------------------------------ */
+
+.botones_v1{
+	text-align: right;
+	position: absolute;
+	width: 480px;
+	right: 2%;
+}
+
+.datos_v1{	
+	color: #FFF;
+	display: inline-block;
+	vertical-align: top;
+	font-weight: bold;
+	font-size: 17px;
+	margin-right: 6px;
+}
+
+.botones_v1 img{
+	display: inline-block;
+	margin-left: 8px;
+	vertical-align: middle;
+}
+
+.botones_v1 img:hover{
+	opacity: 0.6;
+}
 
 .contenedor_v1{  	
   	width: 96%;
@@ -414,7 +506,7 @@ ul, ol {
 .contenedor_v1 .menu_v1{
 	width: cover;
 	position: static;
-	margin-bottom: 5%;
+	margin-bottom: 5%; /*distancia entre boton documentacion y miga de pan */
 }
 
 .contenedor_v1 .menu_sub_v1{
@@ -423,9 +515,8 @@ ul, ol {
 	vertical-align: top;
 }
 
-.contenedor_v1 .item_v1{
-	height: 40px;
-	padding-top: 14px;
+.contenedor_v1 .item_v1{	
+	padding: 14px 12px;
 	background-color: #0A99C3;
 	margin-bottom: 8px;
 	font-size: 1.6em;
@@ -449,5 +540,113 @@ ul, ol {
 .contenedor_v1 .miga_v1{
 	background-color: #FFF;
 	color: #024059;
+	text-align: left;
+	padding: 10px 20px;
 }
 
+/* ------------------------------ ESTILOS VISTA 2 ------------------------------ */
+
+.contenedor_v2{  	
+  	width: 96%;
+  	margin: 20px auto 0;
+	padding-top: 20px;
+	background-color: #024059;
+	padding-bottom: 10%; /*distancia entre menu derecho y miga de pan */
+}
+
+.contenedor_v2 ul{ 
+	vertical-align: top;
+  	width: 50%;
+	display: inline-block;
+}
+
+.contenedor_v2 ul a{
+  	display: block;
+  	padding: 14px 14px;
+  	text-decoration: none;
+  	margin: 2px 20px 10px;
+  	color: #FFF;
+  	background: #0378A6;
+	font-size: 20px;
+	text-align: left;
+}
+
+.contenedor_v2 ul a:hover{
+  	color: #024059;
+  	background: #FFF;
+}
+
+.contenedor_v2 ul a.selected{
+  	margin-bottom: 10px;
+  	color: #024059;
+  	background: #0A99C3;
+  	cursor: default;
+}
+
+.contenedor_v2 div{
+  	display: inline-block;
+	width: 48%; 
+	color: #FFF;
+	text-align: center
+}
+
+.contenedor_v2 div .descrip_v2{	
+  	width: 92%;
+	padding: 10px 10px 20px;
+	margin: 0 auto 10px;	
+  	background-color: #73C5D9;
+	text-align: justify;
+	color: #024059;
+}
+
+.contenedor_v2 div h3{
+  	margin: 2px 0 8px;
+}
+
+.contenedor_v2 div .menu_v2{
+	margin: 10px 0 10px;
+  	display: inline-block;
+	vertical-align: top;
+	width: 100%;	
+}
+
+.contenedor_v2 .menu_sub_v2{
+	width: 100%;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.contenedor_v2 .item_v2{
+	font-weight: bold;
+	text-align: center;
+	padding: 6px 0;
+	background-color: #024059;
+	margin-bottom: 8px;
+}
+
+.contenedor_v2 .item_v2:hover{
+	background-color: #FFF;
+	color: #024059;
+}
+
+.contenedor_v2 .itemlargo_v2{	
+	font-weight: bold;
+	text-align: center;
+	padding: 6px 0;
+	background-color: #024059;
+	margin-bottom: 8px;
+	width: 96.5%;
+}
+
+.contenedor_v2 .itemlargo_v2:hover{
+	background-color: #FFF;
+	color: #024059;
+}
+
+.miga_v2{
+	background-color: #FFF;
+	color: #024059;
+	margin: 0 2%;
+	text-align: left;
+	padding: 10px 20px;	
+}
