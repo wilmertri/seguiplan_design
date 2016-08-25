@@ -16,11 +16,11 @@
    viewBox="0 0 10 10"
    version="1.1"
    inkscape:version="0.48.4 r9939"
-   sodipodi:docname="nav - copia.svg"
+   sodipodi:docname="nav_n.svg"
    id="svg2"><metadata
    id="metadata15"><rdf:RDF><cc:Work
        rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
-         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><sodipodi:namedview
    pagecolor="#ffffff"
    bordercolor="#666666"
    borderopacity="1"
@@ -33,9 +33,9 @@
    inkscape:window-height="958"
    id="namedview13"
    showgrid="false"
-   inkscape:zoom="15.733333"
-   inkscape:cx="10.905491"
-   inkscape:cy="14.709633"
+   inkscape:zoom="44.500586"
+   inkscape:cx="5.9569768"
+   inkscape:cy="6.2068896"
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1"
@@ -52,8 +52,8 @@
  </defs>
  <g
    id="Capa_x0020_1"
-   transform="matrix(-0.33333333,0,0,0.33333333,9.9999999,0)"
-   style="fill:#ffffff">
+   transform="scale(0.33333333,0.33333333)"
+   style="fill:#ffff00">
   <metadata
    id="CorelCorpID_0Corel-Layer" />
   <sodipodi:namedview
@@ -74,11 +74,14 @@
    inkscape:window-x="-8"
    inkscape:window-y="-8"
    inkscape:window-maximized="1" />
-  <path
-   class="fil0"
-   d="M 15,0 C 23.28425,0 30,6.71575 30,15 30,23.28425 23.28425,30 15,30 6.71575,30 0,23.28425 0,15 0,6.71575 6.71575,0 15,0 z m 9.63898,15 -15.4028,-8.89252 0,17.785 15.4028,-8.89252 z M 15,2.2146 C 22.06063,2.2146 27.7854,7.9394 27.7854,15 27.7854,22.06063 22.0606,27.7854 15,27.7854 7.93937,27.7854 2.2146,22.0606 2.2146,15 2.2146,7.93937 7.9394,2.2146 15,2.2146 z"
-   id="path11"
-   inkscape:connector-curvature="0"
-   style="fill:#ffffff" />
+  
  </g>
-</svg>
+<g
+   transform="matrix(-0.89900174,0,0,1.1123449,10,0)"
+   style="font-size:12.62744617000000100px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Sans"
+   id="text2986"><path
+     id="path3759"
+     d="m 7.905293,4.8943193 -4.0622323,2.0333 0,-0.8770137 3.0725296,-1.5629463 -3.0725296,-1.5482477 0,-0.8770137 4.0622323,2.0088024 z M 5.5617244,0 c 3.0716478,0 5.5617246,2.0124903 5.5617246,4.4950087 0,2.4825183 -2.4900768,4.4950086 -5.5617246,4.4950086 C 2.4900767,8.9900173 0,6.977527 0,4.4950087 0,2.0124903 2.4900767,0 5.5617244,0 z m 0,0.66364308 c 2.6179519,0 4.7405916,1.71553502 4.7405916,3.83136562 0,2.1158395 -2.1226508,3.8313655 -4.7405916,3.8313655 -2.6179519,0 -4.7405914,-1.715535 -4.7405914,-3.8313655 0,-2.1158396 2.1226507,-3.83136562 4.7405914,-3.83136562 z"
+     inkscape:connector-curvature="0"
+     sodipodi:nodetypes="ccccccccssssssssss"
+     style="fill:#ffffff" /></g></svg>

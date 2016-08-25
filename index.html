@@ -29,7 +29,7 @@
 					</li>				
 				</ul>
 		</div> 
-       <!-- modal de ingrso -->
+       <!-- modal de ingreso -->
     	<div class="ingreso">
     		<a href="#ir_a_modal"><img src="img/ingreso.svg" width="60px" height="60px" alt=""></a>
     		<div id="ir_a_modal" class="modal">
@@ -57,52 +57,55 @@
      <div class="logo">
  		<img src="img/logo.svg" width="180" height="auto" alt="">
  	 </div>
- 
-    
-   <!-- Inicio Slider -->    
-	  <div id="slides">
-		<div class="slides-container">
-			<div class="descripcion">
-			  <div class="subdes">
-				<h2 class="descrip_titul">TITULO 1</h2>
-				<p class="descrip_conte">
-				  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-				</p>
-			  </div>
-		   </div>
-		   <div class="descripcion">
-		     <div class="subdes">
-				<h2 class="descrip_titul">TITULO 2</h2>
-				<p class="descrip_conte">
-				  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-				</p>
-			  </div>
-			</div>
-			<div class="descripcion">
-			  <div class="subdes">
-				<h2 class="descrip_titul">TITULO 3</h2>
-				<p class="descrip_conte">
-				  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-				</p></div>
+ 	 
+ 	 <!-- inicio slider -->
+ 	  <div class="deslizador">
+		  	  <div id="slides">
+				<div class="slides-container">
+					
+					  <div class="descripcion">
+						<h2 class="">TITULO 1</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</p>
+					  </div>
+				   
+				   
+					 <div class="descripcion">
+						<h2 class="">TITULO 2</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</p>
+					  </div>
+					
+					
+					  <div class="descripcion">
+						<h2 class="">TITULO 3</h2>
+						<p>
+						  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+						</p>
+					  </div>
+					 
+				</div>
+					<nav class="slides-navigation">
+					  <a href="#" class="next"> <img src="img/nav_n.svg" width="90em" alt="next"> </a>
+					  <a href="#" class="prev"> <img src="img/nav_p.svg" width="90em" alt="prev"> </a>
+					</nav>		
 			 </div>
-		</div>
-			<nav class="slides-navigation">
-			  <a href="#" class="next"> <img src="img/nav_n.svg" width="40px" height="40px" alt="next"> </a>
-			  <a href="#" class="prev"> <img src="img/nav_p.svg" width="40px" height="40px" alt="prev"> </a>
-			</nav>		
-     </div>
- <!-- Final Slider -->
- 
- 
- 
+		 </div>	
+ 	 <!-- final slider -->
+ 	 
   <script src="js/jquery-3.1.0.min.js"></script>  
-  
-  <!-- scripts para sliser Slider -->
-  <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>  
-  <script>   
-      $('#slides').superslides();
-  </script>
-  
- 
+  <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
+  <script>	  
+    $(function() {
+      $('#slides').superslides({		  
+		inherit_width_from: '.deslizador',
+        inherit_height_from: '.deslizador',
+        hashchange: true,
+		pagination: true,
+      });      
+    });
+  </script>  
 </body>
 </html>

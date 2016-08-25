@@ -180,7 +180,7 @@ a{
 }
 
 .cerrar{
-	margin-top: 6px;
+	margin-top: 4px;
 }
 
 #aviso{
@@ -247,39 +247,51 @@ ul, ol {
 .botonera {	
 	position: absolute;
 	width: 100%;
-	height: cover;
+	height: 300px;
 	z-index: 26;
 }
 
-.descripcion { 
-    color: #FFF;
-	margin-top: 29%;
-} 
-
-.subdes {
+.deslizador{
+	width: 100%;
+	height: 12em;
 	background-color: rgba(2,64,89,0.4);
 	background-repeat: no-repeat;	
-    background-size: contain; 	
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
-.descrip_titul {
-	margin: 0px 100px 10px;
+.deslizador .descripcion{ 
+	color: #FFF;
+	width: 600px;
 	padding-top: 10px;
-}
-
-.descrip_conte {
-	margin: 0px 100px 0px;
-	padding-bottom: 20px;
-	text-align: justify;
-}
-
-.logo{
-	width: 100%;
-	bottom: 8%; 
+	display: inline-block;
+	vertical-align: top;
+	text-align: center;
 	position: absolute;
-	text-align: center;	
+} 
+
+.deslizador .descripcion p{
+	margin: 1% auto 0px;
+	width: 70%;
+	text-align: justify;
+	font-size: 1.2em;
+	padding-bottom: 50px;
+}
+
+.logo{ 
+	position: absolute;
+	right: 0px;	
+	bottom: 0px;
 	z-index: 13;
 }
+
+.logo img{
+	width: 8em;
+	margin: 30px 20px;
+}
+
 
 /* ------------------------------ ESTILOS HOME ------------------------------ */
 
@@ -649,4 +661,11 @@ ul, ol {
 	margin: 0 2%;
 	text-align: left;
 	padding: 10px 20px;	
+}
+
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- @MEDIA QUERIES -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
+
+@media screen and (max-width:600px) {
+	
 }
