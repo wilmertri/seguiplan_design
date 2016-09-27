@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+  <title>vista4</title>
+  <link rel="stylesheet" href="css/superslides.css">
+  <link rel="stylesheet" href="css/sp.css">  
+</head>
+<body class="fondo_v">
+	<div class="encabezado_v">
+		<div class="titulo_v">
+			<a href="vista3.html"><div class="flecha"><img src="img/flecha.svg" alt=""></div></a>
+			<div class="retorno"><img src="img/bandera.svg" alt=""> Meta Producto 1</div>
+		</div>
+		<div class="botones_v">
+			<div class="datos_v">
+				<div id="fecha">Jueves, 14 Setiembre de 2016</div>
+				<div id="usuario">Usuario: Usuario Ejemplo</div>
+			</div>
+			<a href="home.html"><img src="img/home.svg" alt=""></a>
+			<a href=""><img src="img/perfil.svg" alt=""></a>
+			<a href=""><img src="img/info.svg" alt=""></a>
+			<a href=""><img src="img/salir.svg" alt=""></a>
+		</div>
+	</div>
+	<div class="contenedor_v1">		
+		<ul class="idTabs"> 
+			<li><a href="#tab1">Primero</a></li> 
+			<li><a href="#tab2">Segundo</a></li> 
+		</ul> 
+		<div id="tab1">
+			<div id="item1a">
+				<img id="ir1b" src="img/flecha_b.svg" alt="">
+				<p>EJE DESARROLLO SOCIAL</p> 				
+				<div id="item1b">
+					<img id="ir1c" src="img/flecha_b.svg" alt="">
+					<p>SECTOR: SALUD</p>					
+					<div id="item1c">
+						<img id="ir1d" src="img/flecha_b.svg" alt="">
+						<p>PROGRAMA ASEGURAMIENTO</p>						
+						<div id="item1d">
+							<img id="ir1e" src="img/flecha_b.svg" alt="">
+							<p>META RESULTADO: INCREMENTAR A 102.433 LA AFILIACION DE LA 
+							POBLACION DEL MUNICIPIO AL SGSSSA SALUD DURANTE EL CUATRENIO</p>
+							<div id="item1e">
+								<img id="iresult" src="img/flecha_b.svg" alt="">
+								<p>META PRODUCTO: VINCULAR A UN 50% DURANTE EL CUATRENIO EL NUMERO DE PERSONAS SIN ASEGURAMIENTO (IDENTIFICADAS) EN SALUD AL SISTEMA GENERAL DE SEGURIDAD SOCIAL EN SALUD (2.533 PERSONAS NO AFILIADAS) <br>
+								TIPO META: INCREMENTO</p>								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			<div id="result">
+				<p>META PRODUCTO: VINCULAR A UN 50% DURANTE EL CUATRENIO EL NUMERO DE PERSONAS SIN ASEGURAMIENTO (IDENTIFICADAS) EN SALUD AL SISTEMA GENERAL DE SEGURIDAD SOCIAL EN SALUD (2.533 PERSONAS NO AFILIADAS) 
+				<br>TIPO META: INCREMENTO
+				<br>INDICADOR: NUMERO DE PERSONAS AFILIADAS AL SGSSSA
+				<br>VALOR PROGRAMADO PARA VIGENCIA 2016:1850</p>
+		   </div>
+		</div> 
+		<div id="tab2">
+			segundo			
+		</div>	
+		<div class="miga_v1">Inicio / Plan de Desarrollo Municipal</div>				
+	</div>
+	
+ 	<div class="corpo_info">INFORMACION CORPORATIVA</div>
+ 
+  <script src="js/jquery-3.1.0.min.js"></script>
+  <script src="js/jquery.idTabs.min.js" type="text/javascript"></script>
+  
+    <script type="text/javascript">
+    $(document).ready(function(){ 
+		
+	 	$("#ir1b").click(function() {$("#item1b").css("display", "inline-block");$("#ir1b").css("display", "none");});
+		$("#ir1c").click(function() {$("#item1c").css("display", "inline-block");$("#ir1c").css("display", "none");});
+		$("#ir1d").click(function() {$("#item1d").css("display", "inline-block");$("#ir1d").css("display", "none");});
+		$("#ir1e").click(function() {$("#item1e").css("display", "inline-block");$("#ir1e").css("display", "none");});		
+		$("#iresult").click(function() {$("#result").css("display", "block");$("#iresult").css("display", "none");});
+	
+	});
+   </script> 
+  
+</body>
+</html>
