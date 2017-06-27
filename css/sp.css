@@ -807,7 +807,8 @@ input[id^="item_v3"]:checked + label + .item_v3{
 
 .contenedor_v4 .item_v4{	
 	padding: 14px 12px;
-	background-color: #0A99C3;
+	/*background-color: #0A99C3;*/
+    background: green;
 	margin-bottom: 8px;
 	font-size: 1.6em;
 }
@@ -834,38 +835,37 @@ input[id^="item_v3"]:checked + label + .item_v3{
 	padding: 10px 20px;
 }
 
+.cont_item{
+    margin: 1% 2%;
+    text-align: center;
+    background: red;
+}
+
+#item1a, #item1b{
+  	position: relative;
+}
+
 #item1a{
 	background-color: #0378A6;
-	width: 96%;
-	margin: 6% auto 2%;
 	text-align: center;
 }
 
-#item1b, #item1c, #item1d, #item1e{
-	width: 96%;
+#item1b{	
 	margin: auto;
 	text-align: center;
-	display: none;
-}
-
-#item1c, #item1e{
-  	background-color: #0378A6;
-}
-
-#item1b, #item1d{
-	background-color: #73C5D9;
+    background-color: #73C5D9;
 	color: #024059;
 }
 
-#item1a img, #item1b img, #item1c img, #item1d img, #item1e img{
+/*#item1a img, #item1b img{/*
 	display: inline-block;
 	width: 18px;
 	margin-left: 0.5%;
 	vertical-align: middle;
 	float: right;
-}
+} esltilo de las flechas desplegables*/
 
-#item1a p, #item1b p, #item1c p, #item1d p, #item1e p, #result p{
+#item1a p, #item1b p{
 	margin-bottom: 1%;
 	font-weight: bold;
 	display: inline-block;
@@ -876,10 +876,9 @@ input[id^="item_v3"]:checked + label + .item_v3{
 #result{
   	background-color: #FFF;
 	color: #024059;
-	width: 90%;
+	width: 98%;
 	margin: 2% auto 4%;
 	text-align: center;
-	display: none;
 	padding: 1%;
 }
 
