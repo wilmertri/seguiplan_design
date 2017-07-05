@@ -6,8 +6,25 @@
     border: 0;
 }
 
-a{
+a:link{
 	text-decoration: none;
+}
+
+a:visited{
+    color: #FFF; 
+}
+
+a:selected{
+    text-decoration: none; 
+}
+
+.enlace{
+    color: #FFF;
+}
+
+.enlace:hover{
+    color: #FFF;
+    text-decoration: none;
 }
 
 .fondo_v{
@@ -15,19 +32,22 @@ a{
 	font-family: 'Lato', sans-serif;	
 }
 
+.flexi{
+    width: 100%;
+    height: auto;
+}
 .corpo_info{
 	background-color: #024059;
 	color: #FFF;
 	width: 96%;
 	margin: 10px auto 0;
-	height: 30px;
 	text-align: center;
-	padding-top: 10px;
+    padding: 8px;
 }
 
 .encabezado_v{
 	width: 96%;
-	margin: 50px auto 30px;
+	margin: 20px auto 30px;
 }
 
 .flecha{
@@ -75,12 +95,13 @@ a{
 }
 
 .datos_v{
+    text-align: right;
 	color: #FFF;
 	display: inline-block;
 	vertical-align: top;
 	padding-top: 6px;
 	font-weight: bold;
-	font-size: 18px;
+	font-size: 17px;
 	margin-right: 10px;
 }
 
@@ -285,6 +306,17 @@ ul{
 	margin: 30px 20px;
 }
 
+.logo_municipio{ 
+	position: absolute;
+	left: 0px;	
+	bottom: 0px;
+}
+
+.logo_municipio img{
+	width: 7em;
+	margin: 30px 20px;
+}
+
 
 /* ------------------------------ ESTILOS HOME ------------------------------ */
 
@@ -293,113 +325,104 @@ ul{
 	font-family: 'Lato', sans-serif;
 }
 
+.verde{
+    background: green;
+}
+.azul{
+    background: blue;
+}
+.rojo{
+    background: red;
+}
+
 .contenedor_h{
 	width: 96%;
 	margin: auto;	
 	text-align: center;
+    padding-top: 2%;
 }
 
 .encabezado_h{
-	margin: 3% auto 1%;	
+	margin: 1% auto 1%;	
+}
+
+.logo_munic img{
+    height: auto;
+    width: 5em;
 }
 
 .titulo_h{
 	color: #FFF;
-	width: 100%;
-	font-size: 5em;
+    font-size: 3em;
 }
 
 .subtitulo_h{
 	color: #FFF;
 	width: 100%;
-	font-size: 190%;
+	font-size: 1.2em;
 }
 
-.subconten1_h{
-	width: 30%;
-	display: inline-block;
-	vertical-align: top;
+.logo_h{
+    display: inline-block;    
+    vertical-align: top;
 }
-
-.user_h {
-	background-color: #0378A6;
-	margin: 4% 4%;
-	padding: 6% 10%;
-}
-
-#foto{
-	width: 100%;
-}
-
-#foto img{	
-	width: 80%;
-	margin-bottom:  2%;
-}
-
-.dato_nombre, .dato_fecha{
-	background-color: #FFF;
-	margin: 4% auto;	
-	color: #024059;
-	font-size: 120%;
-	font-weight: bold;
-	padding: 0.2em 0 0.2em;
-	
-}
-
 .logo_h img{
-	margin: 12% auto 14%;
-	width: 40%;
+	height: auto;
+	width: 7em;
 }
 
-.subconten2_h{
-	width: 69%;
-	display: inline-block;
-	vertical-align: top;
+.usuario_h{
+    display: inline-block;
+    color: #FFF;
+    font-weight: bold;
+    vertical-align: top;
+    margin-left: 4%;
+}
+
+.usuario_h img{
+	height: auto;
+	width: 5.8em;
+    border-radius: 3.5em;
 }
 
 .menu_h{
-	padding-top: 2%;
+	margin-top: 6%;
 	margin-bottom: 4%;
 	color: #FFF;
 }
 
 .menu_h h2{
-	font-size: 130%;
+    display: inline;
+    font-size: 1.4em;
 }
 
 .menu_h ul{
 	left: 0;
 }
 
-.menu_h ul li img{
-	width: 50%;
+.icono{
+	width: 30%;
+    margin-left: 2%;
+    text-align: center;
+    height: auto;
+    display: inline-block;
 }
 
 .menu_h ul li{	
 	background-color: #0A99C3;
-	display: inline-block;
-	width: 23%;
 	vertical-align: top;	
 	height: cover;
-	margin: 0.2em;
-	padding: 4% 0 4%;
-	transition: color 0.5s linear 0.2s;
-}
-
-.menu_h ul li a:visited{
-	color: #FFF;
+    text-align: left;
+    margin-bottom: 1%;
+	padding: 2% 0 2%;
 }
 
 .menu_h ul li:hover{
 	background-color: #73C5D9;
 }
 
-.menu_h ul li:nth-child(4n){
-	margin-right: 0;
-}
-
-.menu_h ul li img{
-	width: 50%;
+.slider_h{
+    margin: 3% auto 1%;
 }
 
 .cambio{ 
@@ -438,7 +461,7 @@ ul{
 .botones_v1{
 	text-align: right;
 	position: absolute;
-	width: 480px;
+	width: 500px;
 	right: 2%;
 }
 
@@ -455,6 +478,7 @@ ul{
 	display: inline-block;
 	margin-left: 8px;
 	vertical-align: middle;
+    width: 53px;
 }
 
 .botones_v1 img:hover{
@@ -506,31 +530,29 @@ ul{
 	color: #FFF;
 }
 
-.contenedor_v1 div h3{
-  	margin: 14px 0 4px;
-}
-
 .contenedor_v1 div {
   	text-align: justify;
 }
 
-.contenedor_v1 .menu_v1{
-	width: cover;
-	position: static;
-	margin-bottom: 5%; /*distancia entre boton documentacion y miga de pan */
+.descrip_v1{    
+    text-align: center;
 }
 
-.contenedor_v1 .menu_sub_v1{
-	width: 48%;
-	display: inline-block;
-	vertical-align: top;
+.titul_v1{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.menu_v1{
+    margin-top: -1.5%;
 }
 
 .contenedor_v1 .item_v1{	
 	padding: 14px 12px;
 	background-color: #0A99C3;
 	margin-bottom: 8px;
-	font-size: 1.6em;
+	font-size: 1.5em;
+    text-align: left;
 }
 
 .contenedor_v1 .item_v1:hover{
@@ -538,14 +560,10 @@ ul{
 	color: #0A99C3;
 }
 
-.contenedor_v1 .menu_v1 .item2_v1{
-	background-color: #FFF;
-	color: #024059;
-	text-align: center;
-	width: 280px;
-	height: 30px;
-	margin: auto;
-	font-size: 24px;
+.icono_v1{    
+    font-size: 1.5em;
+    margin: 0 2%;
+    vertical-align: text-bottom;
 }
 
 .contenedor_v1 .miga_v1{
@@ -555,6 +573,211 @@ ul{
 	padding: 10px 20px;
 }
 
+
+/* ------------------------------ ESTILOS VISTA 1A ------------------------------ */
+
+
+/* ----
+#pestana_v1a{
+    margin: 2% auto;
+    background: #024059;
+}
+---- */
+
+.contenedor_v1a{  	
+  	width: 96%;
+  	margin: 20px auto 0;	
+}
+
+.contenedor_v1a li { 
+	list-style: none; 
+	float: left; 
+}
+
+.contenedor_v1a ul a{
+  	display: block;
+  	padding: 8px 14px;
+  	text-decoration: none;
+  	margin: 1px 1px 0px;
+	border-bottom: 1px solid #73C5D9;
+  	margin-left: 0;
+  	color: #024059;
+  	background: #73C5D9;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.contenedor_v1a ul a:hover{
+  	color: #024059;
+  	background: #FFF;
+}
+
+.contenedor_v1a ul a.selected{
+  	margin-bottom: 0;
+  	color: #FFF;
+  	background: #024059;
+  	border-bottom: 1px solid #024059;
+  	cursor: default;
+}
+.contenedor_v1a div{
+  	padding: 10px 10px 8px 10px;
+  	*padding-top: 3px;
+  	*margin-top: -15px;
+  	clear: left;
+  	background: #024059;
+	color: #FFF;
+}
+
+.contenedor_v1a div {
+  	text-align: justify;
+}
+
+.descrip_v1a{    
+    text-align: center;
+     margin-top: -1.5%;
+}
+
+.titul_v1a{
+    font-size: 150%;
+    font-weight: bold;
+   
+}
+
+.contenedor_v1a .item_v1a{	
+	padding: 10px;
+    height: 7em;
+	background: #0A99C3;
+	margin-bottom: 8px;
+	font-size: 1.5em;
+    text-align: center;
+}
+
+.item_v1a:hover{
+	background-color: #FFF;
+	color: #0A99C3;
+    cursor: pointer;
+}
+
+.icono_v1a{    
+    font-size: 1.5em;
+    display: block;
+    margin: 4% 0 2%;    
+    vertical-align: text-bottom;
+}
+
+.item_nom{
+    display: block;
+    margin: 4% 0 2%;
+}
+
+.contenedor_v1a .miga_v1a{
+	background-color: #FFF;
+	color: #024059;
+	text-align: left;
+	padding: 10px 20px;
+}
+
+
+/* ------------------------------ ESTILOS VISTA 1B ------------------------------ */
+
+/* ----
+#pestana_v1b{
+    margin: 2% auto;
+    background: #024059;
+}
+---- */
+
+.contenedor_v1b{  	
+  	width: 96%;
+  	margin: 20px auto 0;	
+}
+
+.contenedor_v1b li { 
+	list-style: none; 
+	float: left; 
+}
+
+.contenedor_v1b ul a{
+  	display: block;
+  	padding: 8px 14px;
+  	text-decoration: none;
+  	margin: 1px 1px 0px;
+	border-bottom: 1px solid #73C5D9;
+  	margin-left: 0;
+  	color: #024059;
+  	background: #73C5D9;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.contenedor_v1b ul a:hover{
+  	color: #024059;
+  	background: #FFF;
+}
+
+.contenedor_v1b ul a.selected{
+  	margin-bottom: 0;
+  	color: #FFF;
+  	background: #024059;
+  	border-bottom: 1px solid #024059;
+  	cursor: default;
+}
+.contenedor_v1b div{
+  	padding: 10px 10px 8px 10px;
+  	*padding-top: 3px;
+  	*margin-top: -15px;
+  	clear: left;
+  	background: #024059;
+	color: #FFF;
+}
+
+.contenedor_v1b div {
+  	text-align: justify;
+}
+
+.descrip_v1b{    
+    text-align: center;
+}
+
+.titul_v1b{
+    font-size: 200%;
+    font-weight: bold;
+}
+
+.menu_v1b{
+    margin-top: -1.5%;
+}
+
+.contenedor_v1b .item_v1b{	
+	padding: 14px 12px;
+	background-color: #0A99C3;
+	margin-bottom: 8px;
+	font-size: 1.5em;
+    text-align: left;
+}
+
+.contenedor_v1b .item_v1b:hover{
+	background-color: #FFF;
+	color: #0A99C3;
+}
+
+.icono_v1b{    
+    font-size: 1.5em;
+    margin: 0 2%;
+    vertical-align: text-bottom;
+}
+
+.contenedor_v1b .miga_v1b{
+	background-color: #FFF;
+	color: #024059;
+	text-align: left;
+	padding: 10px 20px;
+}
+
+
+
 /* ------------------------------ ESTILOS VISTA 2 ------------------------------ */
 
 .contenedor_v2{  	
@@ -562,7 +785,7 @@ ul{
   	margin: 20px auto 0;
 	padding-top: 20px;
 	background-color: #024059;
-	padding-bottom: 10%; /*distancia entre menu derecho y miga de pan */
+	padding-bottom: 3%; /*distancia entre menu derecho y miga de pan */
 }
 
 .contenedor_v2 ul{ 
@@ -592,6 +815,18 @@ ul{
   	color: #024059;
   	background: #0A99C3;
   	cursor: default;
+    font-weight: bold;
+}
+
+.icono_v2{
+    font-size: 200%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4%;
+}
+.selector_v2{
+    display: inline-block;
+    vertical-align: middle;
 }
 
 .contenedor_v2 div{
