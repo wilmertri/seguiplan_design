@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     border: 0;
+    line-height: 1.2;
+    font-family: 'Lato', sans-serif;
 }
 
 a:link{
@@ -28,8 +30,7 @@ a:selected{
 }
 
 .fondo_v{
-	background-color: #0378A6;
-	font-family: 'Lato', sans-serif;	
+	background-color: #0378A6;		
 }
 
 .flexi{
@@ -53,7 +54,7 @@ a:selected{
 .flecha{
 	background-color: #FFF;
 	width: 50px;	
-	padding: 8.5px 2px;
+	padding: 10px 2px;
 	text-align: center;
 	display: inline-block;
 	vertical-align: top;
@@ -68,7 +69,7 @@ a:selected{
 	font-size: 1.4em;
 	font-weight: bold;	
 	color: #024059;
-	margin-left: 4px;
+	margin-left: 2px;
 }
 
 .titulo_v img{	
@@ -86,12 +87,13 @@ a:selected{
 .botones_v img{
 	width: 53px;
 	display: inline-block;
+    background: #024059;
 	vertical-align: top;
 	margin-left: 2px;
 }
 
 .botones_v img:hover{
-	opacity: 0.6;
+	background: #73C5D9;
 }
 
 .datos_v{
@@ -105,8 +107,21 @@ a:selected{
 	margin-right: 10px;
 }
 
+.biselado{
+    border-radius: 0.6em;  
+    box-shadow: 
+        inset 4px 4px 4px rgba(115,197,217,.7), 
+        inset -4px -4px 5px rgba(0,0,0,.2), 
+        4px 4px 10px rgba(0,0,0,.4);
+}
 
-
+.biselado:hover{
+    border-radius: 0.6em;  
+    box-shadow: 
+        inset 3px 3px 3px rgba(255,255,255,.1),
+        inset -4px -4px 5px rgba(0,0,0,.2), 
+        4px 4px 10px rgba(0,0,0,.4);
+}
 
 /* ------------------------------ ESTILOS INDEX ------------------------------ */
 
@@ -198,6 +213,7 @@ a:selected{
 	vertical-align: middle;
 	text-decoration: none;
 	display: inline-block;
+    cursor: pointer;
 }
 
 .cerrar{
@@ -325,16 +341,6 @@ ul{
 	font-family: 'Lato', sans-serif;
 }
 
-.verde{
-    background: green;
-}
-.azul{
-    background: blue;
-}
-.rojo{
-    background: red;
-}
-
 .contenedor_h{
 	width: 96%;
 	margin: auto;	
@@ -346,6 +352,11 @@ ul{
 	margin: 1% auto 1%;	
 }
 
+.logo_munic{
+    display: inline-block;    
+    vertical-align: top;
+}
+
 .logo_munic img{
     height: auto;
     width: 5em;
@@ -353,7 +364,7 @@ ul{
 
 .titulo_h{
 	color: #FFF;
-    font-size: 3em;
+    font-size: 2.8em;
 }
 
 .subtitulo_h{
@@ -362,10 +373,6 @@ ul{
 	font-size: 1.2em;
 }
 
-.logo_h{
-    display: inline-block;    
-    vertical-align: top;
-}
 .logo_h img{
 	height: auto;
 	width: 7em;
@@ -436,24 +443,41 @@ ul{
 	height: auto;
 }
 
+.corpo_info_h{
+	background-color: #0378A6;
+	color: #FFF;
+	width: 94%;
+    height: 60px;
+	margin: 4px auto 0;
+    text-align: center;
+}
+
+.corporativa_h{
+    display: inline-block;
+    margin-top: 20px;
+    margin-right: -10%;
+    position: relative;
+}
+
 .botones_h{
-	text-align: right;
-	margin-top: 2%;
-	position: relative;
+    display: inline-block;
+    float: right;
+    width: 160px;
+    margin-top: 0.65%;
 }
 
 .botones_h li{
-	margin-left: 2%;
+	margin-left: 1%;
 	display: inline;
 }
 
 .botones_h li img{
-	width: 50px;
+	width: 40px;
 	transition: width 0.3s ease-out 0.2s;
 }
 
 .botones_h li img:hover{
-	width: 60px;
+	width: 50px;
 }
 
 /* ------------------------------ ESTILOS VISTA 1 ------------------------------ */
@@ -476,13 +500,26 @@ ul{
 
 .botones_v1 img{
 	display: inline-block;
+    background: #024059;
 	margin-left: 8px;
 	vertical-align: middle;
     width: 53px;
 }
 
 .botones_v1 img:hover{
-	opacity: 0.6;
+	background: #73C5D9;
+}
+
+.botones_v img{
+	width: 53px;
+	display: inline-block;
+    background: #024059;
+	vertical-align: top;
+	margin-left: 2px;
+}
+
+.botones_v img:hover{
+	background: #73C5D9;
 }
 
 .contenedor_v1{  	
@@ -507,6 +544,7 @@ ul{
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
+    border-radius: 10px 10px 0 0;
 }
 
 .contenedor_v1 ul a:hover{
@@ -586,7 +624,12 @@ ul{
 
 .contenedor_v1a{  	
   	width: 96%;
-  	margin: 20px auto 0;	
+  	margin: 10px auto 0;	
+}
+
+.interior_v1a{
+    width: 98%;
+    margin: auto;
 }
 
 .contenedor_v1a li { 
@@ -652,7 +695,6 @@ ul{
 	font-size: 1.5em;
     text-align: center;
 }
-
 .item_v1a:hover{
 	background-color: #FFF;
 	color: #0A99C3;
@@ -664,6 +706,7 @@ ul{
     display: block;
     margin: 4% 0 2%;    
     vertical-align: text-bottom;
+    color: #F7FE2E;
 }
 
 .item_nom{
@@ -692,6 +735,12 @@ ul{
   	width: 96%;
   	margin: 20px auto 0;	
 }
+
+.interior_v1b{
+    width: 98%;
+    margin: auto;
+}
+
 
 .contenedor_v1b li { 
 	list-style: none; 
@@ -756,6 +805,7 @@ ul{
 	margin-bottom: 8px;
 	font-size: 1.5em;
     text-align: left;
+    vertical-align: middle;
 }
 
 .contenedor_v1b .item_v1b:hover{
@@ -766,7 +816,7 @@ ul{
 .icono_v1b{    
     font-size: 1.5em;
     margin: 0 2%;
-    vertical-align: text-bottom;
+    vertical-align: middle;
 }
 
 .contenedor_v1b .miga_v1b{
@@ -904,7 +954,7 @@ ul{
   	margin: 20px auto 0;
 	padding-top: 20px;
 	background-color: #024059;
-	padding-bottom: 10%; /*distancia entre menu derecho y miga de pan */
+	padding-bottom: 3%; /*distancia entre menu derecho y miga de pan */
 }
 
 .menu_v3{
@@ -919,7 +969,7 @@ ul{
 
 .subitem_v3 li{
 	background-color: #FFF;
-	margin: 2% 1%;
+	margin: 1% 1%;
 	width: 300px;
 	padding: 10px 0;
 	font-weight: bold;
@@ -963,7 +1013,7 @@ input[id^="item_v3"] ~ .item_v3 {
     width: 100%;
     height: 0;
     overflow: hidden;    
-    margin: 0 auto 2%;
+    margin: 0 auto 1%;
 	text-align: center;
     background-color: #0378A6;
 }
@@ -996,7 +1046,8 @@ input[id^="item_v3"]:checked + label + .item_v3{
   	background-color: #73C5D9;
 	font-size: 16px;
 	font-weight: bold;
-	text-align: center;
+	text-align: center;    
+    border-radius: 10px 10px 0 0;
 }
 
 .contenedor_v4 ul a:hover{
@@ -1112,7 +1163,7 @@ input[id^="item_v3"]:checked + label + .item_v3{
   	background-color: #FFF;
 	color: #024059;
 	width: 98%;
-	margin: 2% auto 4%;
+	margin: 2% auto 0.2%;
 	text-align: center;
 	padding: 1%;
 }
@@ -1208,13 +1259,6 @@ input[id^="item_v3"]:checked + label + .item_v3{
 		width: 70%;
 		margin-bottom: 0;
 	}
-	.logo_h{
-		width: 48%;
-	}
-	.logo_h img{
-		visibility: hidden;
-		height: 0;
-	}
 	
 /* ---- VISTA1 ---- */	
 	.contenedor_v1 .menu_sub_v1{
@@ -1266,13 +1310,6 @@ input[id^="item_v3"]:checked + label + .item_v3{
 	.user_h{
 		width: 70%;
 		margin-bottom: 0;
-	}
-	.logo_h{
-		width: 48%;
-	}
-	.logo_h img{
-		visibility: hidden;
-		height: 0;
 	}
 	
 /* ---- VISTA1 ---- */	
