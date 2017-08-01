@@ -862,7 +862,7 @@ ul{
 
 .contenedor_v2 ul a.selected{
   	margin-bottom: 10px;
-  	color: #024059;
+  	color: #F7FE2E;
   	background: #0A99C3;
   	cursor: default;
     font-weight: bold;
@@ -1023,6 +1023,353 @@ input[id^="item_v3"]:checked + label + .item_v3{
 }
 
 
+/* ------------------------------ ESTILOS VISTA 3A ------------------------------ */
+
+.contenedor_v3a{  	
+  	width: 96%;
+  	margin: 5px auto 0;	
+}
+
+.contenedor_v3a li { 
+	list-style: none; 
+	float: left; 
+}
+
+.contenedor_v3a ul a{
+  	display: block;
+  	padding: 8px 14px;
+  	text-decoration: none;
+  	margin: 1px 1px 0px;
+	border-bottom: 1px solid #73C5D9;
+  	margin-left: 0;
+  	color: #024059;
+  	background-color: #73C5D9;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;    
+    border-radius: 10px 10px 0 0;
+}
+
+.contenedor_v3a ul a:hover{
+  	color: #024059;
+  	background: #FFF;
+}
+
+.contenedor_v3a ul a.selected{
+  	margin-bottom: 0;
+  	color: #FFF;
+  	background: #024059;
+  	border-bottom: 1px solid #024059;
+  	cursor: default;
+}
+.contenedor_v3a div{
+  	padding: 10px 10px 8px 10px;
+  	*padding-top: 3px;
+  	*margin-top: -15px;
+  	clear: left;
+  	background: #024059;
+	color: #FFF;
+}
+
+.contenedor_v3a .miga_v3a{
+	background-color: #FFF;
+	color: #024059;
+	text-align: left;
+	padding: 10px 20px;
+}
+
+.area1_tab1{
+    margin-left: 2%;
+}
+
+.area1_tab1 p{
+    background: #0378A6;
+    text-align: justify;
+    padding: 4% 8%;
+    border-radius: 1em;
+    font-weight: bold;
+}
+
+.area2_tab1{
+    text-align: center;
+}
+
+.area2_tab1 img{
+    width: 80%;
+}
+
+
+.area1_tab2{
+    
+}
+
+.icon_tab2{
+    position: relative;
+    float: right;
+    margin-right: 2%;
+}
+
+input[id^="item_tab2"]{
+ 	display: none;
+}
+
+input[id^="item_tab2"] + label {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 8px 0;
+	color: #FFF;
+	font-weight: bold;
+	font-size: 24px;
+    text-align: left;
+    cursor: pointer;
+    transition: all .6s;
+}
+
+input[id^="item_tab2"]:checked + label {
+   height: auto;
+}
+
+input[id^="item_tab2"] ~ .item_tab2 {
+    width: 100%;
+    height: 0;
+    overflow: hidden;    
+    margin: 0 auto;
+	text-align: left;
+}
+
+input[id^="item_tab2"]:checked + label + .item_tab2{
+    height: auto;
+}
+
+.text_tab2{
+    font-family: 'Lato', sans-serif;
+    height: 35px;
+    width: 80%;
+    color: #024059;
+    margin-bottom: 1%;
+    padding-left: 10px;
+}
+
+
+
+.area1_tab3{
+    
+}
+
+.area2_tab3{
+   
+}
+
+.area1_tab3 span, .area2_tab3 span{
+    font-size: 1.75em;
+    font-weight: bold;
+    display: block;
+}
+
+.grafic_area2_tab3{
+    margin: 3% auto 0;
+    text-align: center;
+}
+
+.grafic_area2_tab3 img{
+    width: 60%;
+    height: auto;
+}
+
+.etiq_v3a{
+    margin-top: 2%;
+}
+
+.obser_v3a{
+    width: 100%;
+}
+
+.selector_v3a, .text_v3a{
+    font-family: 'Lato', sans-serif;
+    height: 35px;
+    width: 80%;
+    padding-left: 10px;
+    color: #024059;
+    margin-bottom: 2%;
+}
+
+.boton_v3a{
+	background-color: #0A99C3;
+	width: 80px;
+	height: 30px;
+    margin-top: 1%;
+	font-size: 14px;
+	color: #FFF;
+	text-align: center;
+    font-weight: bold;
+}
+
+.boton_v3a:hover{
+	background-color: #FFF;
+	color: #024059;
+    cursor: pointer;
+}
+
+.area1_tab4{
+    width: 98%;
+    margin: auto;
+}
+
+.titul_tab4{
+    font-size: 1.75em;
+    margin-left: 2%;
+    font-weight: bold;
+    display: block;
+}
+
+.subtitul_tab4{
+    font-size: 1.5em;
+    margin-left: 2%;
+    font-weight: bold;
+    display: block;
+}
+
+.tabla { 
+    width: 96%; 
+    border-collapse: collapse;
+    margin: auto;
+}
+
+/* inicio para colores intercaldos entre filas */
+tr { 
+    background: #FFF; 
+    color: #024059;  
+}
+
+tr:nth-of-type(odd) { 
+    background: #CCE3E9; 
+    color: #024059; 
+}
+/* final para colores intercaldos entre filas */
+
+.icon-tb1_v3a{
+    position: relative;
+    float: right;
+}
+
+th { 
+    background: #0378A6;; 
+    color: #FFF; 
+    font-weight: bold; 
+    padding: 6px; 
+    border-left: 1px solid #73C5D9;
+    border-right: 1px solid #73C5D9;
+    text-align: left;
+}
+th:hover { 
+    cursor: pointer;
+    background: #FFF;
+    color: #024059;
+}
+
+td { 
+    padding: 6px; 
+    border-left: 1px solid #73C5D9;
+    border-right: 1px solid #73C5D9;
+    text-align: left; 
+}
+
+
+/* ------------------------------ ESTILOS VISTA 3B ------------------------------ */
+
+.contenedor_v3b{  	
+  	width: 96%;
+  	margin: 20px auto 0;
+	padding-top: 20px;
+	background-color: #024059;
+	padding-bottom: 3%; /*distancia entre menu derecho y miga de pan */
+}
+
+.contenedor_v3b ul{ 
+	vertical-align: top;
+  	width: 50%;
+	display: inline-block;
+}
+
+.contenedor_v3b ul a{
+  	display: block;
+  	padding: 14px 14px;
+  	text-decoration: none;
+  	margin: 2px 20px 10px;
+  	color: #FFF;
+  	background: #0378A6;
+	font-size: 20px;
+	text-align: left;
+}
+
+.contenedor_v3b ul a:hover{
+  	color: #024059;
+  	background: #FFF;
+}
+
+.contenedor_v3b ul a.selected{
+  	margin-bottom: 10px;
+  	color: #F7FE2E;
+  	background: #0A99C3;
+  	cursor: default;
+    font-weight: bold;
+}
+
+.icono_v3b{
+    font-size: 200%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4%;
+}
+
+.contenedor_v3b div{
+  	display: inline-block;
+	width: 48%; 
+	color: #FFF;
+	text-align: center;
+    padding-top: 4%;
+}
+
+.contenedor_v3b div .descrip_v3b{	
+  	width: 92%;    
+	padding: 10px 10px 20px;
+	margin: 0 auto 10px;	
+  	background-color: #0378A6;
+}
+
+.formu_v3b{
+    width: 100%;
+    padding: 2% 1%;
+}
+
+.formu_v3b label{ 
+    margin-bottom: 2%;
+    font-weight: bold;
+}
+
+.formu_v3b textarea, .formu_v3b select{ 
+    font-family: 'Lato', sans-serif;
+    width: 90%;
+    padding-left: 10px;
+    color: #024059;
+    margin-bottom: 2%;
+}
+
+.formu_v3b select{
+    height: 35px;
+    margin-top: 2%;
+}
+
+.miga_v3b{
+	background-color: #FFF;
+	color: #024059;
+	margin: 0 2%;
+	text-align: left;
+	padding: 10px 20px;	
+}
+
+
 /* ------------------------------ ESTILOS VISTA 4 ------------------------------ */
 
 .contenedor_v4{  	
@@ -1124,7 +1471,6 @@ input[id^="item_v3"]:checked + label + .item_v3{
 .cont_item{
     margin: 1% 2%;
     text-align: center;
-    background: red;
 }
 
 #item1a, #item1b{
@@ -1275,6 +1621,49 @@ input[id^="item_v3"]:checked + label + .item_v3{
 		margin-top: 8%; 
 	}
 	
+}
+
+
+
+/* ---- ESTILOS PARA LA TABLA V3A----  */
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 800px)  {
+
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		position: absolute;
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+    
+	td:nth-of-type(1):before { content: "Actividades:"; }
+	td:nth-of-type(2):before { content: "Cumplimiento:"; }
+	td:nth-of-type(3):before { content: "Fuente:"; }
+	td:nth-of-type(4):before { content: "Valor Fuente:"; }
+    td:nth-of-type(5):before { content: "Evidencia:"; }
+	td:nth-of-type(6):before { content: "Revisión:"; }
 }
 
 @media screen and (max-width:600px) {
