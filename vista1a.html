@@ -11,25 +11,37 @@
 </head>
 <body class="fondo_v">
 
-	<div class="encabezado_v">
-		<a class="flecha" href="vista1.html"><img src="img/flecha.svg" alt=""></a>
-		<div class="titulo_v">Nombre del PDM</div>
-		<div class="botones_v">
-			<div class="datos_v">
-				<div id="fecha">Jueves, 14 Setiembre de 2016</div>
-				<div id="usuario">Usuario: Usuario Ejemplo</div>
-			</div>
-			<a href="home.html"><img src="img/home.svg" alt=""></a>
-			<a href=""><img src="img/perfil.svg" alt=""></a>
-			<a href=""><img src="img/info.svg" alt=""></a>
-			<a href=""><img src="img/salir.svg" alt=""></a>
-		</div>
-	</div>
+   <!--ENCABEZADO-->
+   <div class="contenedor_encabezado">
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-sm-6">
+                   <!--titulo vista-->                                          
+                    <div class="titulo_v">Nombre del PDM</div>  
+               </div>
+               <div class="col-sm-6">
+                   <!--menu superior vista-->
+                    <div class="menu_general">
+                            <div class="datos_v">
+                                <div id="fecha">Jueves, 14 Setiembre de 2016</div>
+                                <div id="usuario">Usuario: Usuario Ejemplo</div>
+                            </div>                           
+                            <a href=""><img src="img/flecha.svg" title="VOLVER"  alt=""></a>
+                            <a href="home.html"><img src="img/home.svg" title="INICIO" alt=""></a>
+                            <a href=""><img src="img/perfil.svg" title="USUARIO" alt=""></a>
+                            <a href=""><img src="img/info.svg" title="INFORMACION" alt=""></a>
+                            <a href=""><img src="img/salir.svg" title="SALIR" alt=""></a>
+                    </div>
+               </div>
+           </div>   
+       </div>
+   </div> 
 	
+	
+	<!--CONTENIDO-->  
 	<div class="contenedor_v1a">		
 		<div class="container-fluid">
-            <div class="interior_v1a">
-                <div class="row">  
+                <div class="row grupov1a">  
                     <div class="col-md-3">
                         <a class="enlace" href="vista2.html">
                             <div class="item_v1a biselado">                                
@@ -62,6 +74,8 @@
                             </div>
                         </a>
                     </div>
+                </div>
+                <div class="row grupov1a">  
                     <div class="col-md-3">
                         <a class="enlace" href="#">
                             <div class="item_v1a biselado">                                
@@ -71,12 +85,10 @@
                         </a>
                     </div>
                 </div>
-             </div>  
          </div>
 	</div>
 	
-	<div class="miga_v2">Inicio / Plan de Desarrollo Municipal / CHIA TII(2012-2015) / Cargue Informacion / Deasarrollo Social / Salud</div>
-	
+	<!--PIE DE PAGIINA-->	
  	<div class="corpo_info">INFORMACION CORPORATIVA</div>
   
   <script src="js/jquery-3.1.0.min.js"></script>

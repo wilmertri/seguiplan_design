@@ -6,18 +6,27 @@
     border: 0;
     line-height: 1.2;
     font-family: 'Lato', sans-serif;
+    list-style: none;
 }
 
 a:link{
+    color: #FFF;
 	text-decoration: none;
 }
 
 a:visited{
-    color: #FFF; 
+	color: #FFF;
+	text-decoration: none;
+}
+
+a:hover{
+    color: #FFF;
+	text-decoration: none;
 }
 
 a:selected{
-    text-decoration: none; 
+    color: #FFF;
+	text-decoration: none;
 }
 
 .enlace{
@@ -37,62 +46,48 @@ a:selected{
     width: 100%;
     height: auto;
 }
-.corpo_info{
-	background-color: #024059;
-	color: #FFF;
-	width: 96%;
-	margin: 10px auto 0;
-	text-align: center;
-    padding: 8px;
-}
 
-.encabezado_v{
-	width: 96%;
-	margin: 20px auto 30px;
-}
-
-.flecha{
-	background-color: #FFF;
-	width: 50px;	
-	padding: 10px 2px;
-	text-align: center;
-	display: inline-block;
-	vertical-align: top;
+.contenedor_encabezado{  	
+  	width: 98%;
+    margin: 1% auto 0;
 }
 
 .titulo_v{	
-	background-color: #FFF;
-	display: inline-block;
-	vertical-align: top;
-	width: 50%;
-	padding: 14px 10px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    padding: 0 2%;
+    vertical-align: middle;
+    background: #FFF;
 	font-size: 1.4em;
 	font-weight: bold;	
 	color: #024059;
-	margin-left: 2px;
+    color: #0378A6;	
 }
 
-.titulo_v img{	
-	width: 1.1em;
-	margin-right: 4px;
+.titulo_v span p{	
+    display: inline;
+    margin-left: 2%;
+    font-weight: bold;
 }
 
-.botones_v{
+.menu_general{
 	width: cover;
 	float: right;
 	display: inline-block;
-	vertical-align: top;
 }
 
-.botones_v img{
+.menu_general img{
 	width: 53px;
-	display: inline-block;
-    background: #024059;
-	vertical-align: top;
-	margin-left: 2px;
+    background: #024059;    
+    transition: all 0.6s ease-out;
+	vertical-align: baseline;
 }
 
-.botones_v img:hover{
+.menu_general img:hover{
 	background: #73C5D9;
 }
 
@@ -123,6 +118,17 @@ a:selected{
         4px 4px 10px rgba(0,0,0,.4);
 }
 
+.corpo_info{
+	background: #024059;
+    margin: auto;
+	color: #FFF;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+	text-align: center;
+    padding: 8px;
+}
+
 /* ------------------------------ ESTILOS INDEX ------------------------------ */
 
 .fondo{
@@ -139,19 +145,21 @@ a:selected{
 
 .ingreso{
 	width: 100px;
-	height: 100px;
-	float: left;
-	position: absolute;
-	right: 0;
-	margin-right: 50px;
+	height: 115px;
+	margin: 5% auto 5%;
 	background-color: #024059;
 	text-align: center;
+    font-weight: bold;
 }
 
 .ingreso img{
 	margin-top: 13px;
 	width: 70px;
 	height: 70px;
+}
+
+.ingreso p{
+	margin-top: 3px;
 }
 
 .bienvenida{
@@ -179,7 +187,7 @@ a:selected{
   background-color: #024059;
   width: 420px;
   height: 360px;
-  margin: 10% auto 15%;
+  margin: 12% auto 0;
   position: relative;
   color: #FFF;	
   text-align: center;
@@ -206,80 +214,40 @@ a:selected{
 	background-color: #0A99C3;
 	width: 120px;
 	height: 30px;
-	margin: 10px 22px;
+	margin: 10px auto;
 	font-size: 18px;
 	color: #FFF;
-	text-align: center;
 	vertical-align: middle;
 	text-decoration: none;
-	display: inline-block;
+	display: block;
     cursor: pointer;
 }
 
 .cerrar{
-	margin-top: 4px;
+    display: block;
+    position: absolute;
+    right: 2px;
+    top: 2px;
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    text-align: center;
+    padding-top: 2px;
+}
+
+.cerrar:hover{
+    background-color: #FFF;
+    color: #024059;
 }
 
 #aviso{
 	background-color: #73C5D9;
 	width: 100%;	
-	height: 30px;
+	height: 34px;
 	color: #024059;
 	padding-top: 10px;
 	font-weight: bold;
 }
-
-/* Menu PDM */
-
-#pdm {
-	padding-top: 30px;
-	width:500px;
-	font-size: 20px;
-}
-
-ul{
-	list-style: none;	
-}
-
-.nav > li {
-	float: left;
-}
-
-.nav li a {
-	width: 180px;
-	background-color: #024059;
-	color: #fff;
-	text-decoration: none;
-	padding: 20px 12px;
-	display: block;
-	margin-left: 20px;
-}
-
-.nav li a:hover {
-	background-color: #FFF;
-	color: #024059;
-}
-
-.nav li ul {
-	display: none;
-	position: absolute;
-	min-width: 140px;
-}
-
-.nav li:hover > ul {
-	display: block;
-}
-
-.nav li ul li {
-	position:relative;
-}
-
-.nav li ul li ul {
-	right:-140px;
-	top:0px;
-}
-	
-/* fin menu PDM */
 
 .deslizador{
 	width: 100%;
@@ -312,9 +280,12 @@ ul{
 }
 
 .logo{ 
-	position: absolute;
-	right: 0px;	
-	bottom: 0px;
+	margin: auto;
+    position: absolute;
+    bottom: 2%;
+    width: 100%;
+	text-align: center;
+    z-index: -6;
 }
 
 .logo img{
@@ -322,15 +293,12 @@ ul{
 	margin: 30px 20px;
 }
 
-.logo_municipio{ 
-	position: absolute;
-	left: 0px;	
-	bottom: 0px;
-}
-
-.logo_municipio img{
-	width: 7em;
-	margin: 30px 20px;
+.enlace_web{
+	margin: auto;
+    position: absolute;
+    bottom: 1%;
+    padding: 2px 10px;
+	text-align: center;
 }
 
 
@@ -355,6 +323,7 @@ ul{
 .logo_munic{
     display: inline-block;    
     vertical-align: top;
+    margin-right: 6%;
 }
 
 .logo_munic img{
@@ -378,163 +347,116 @@ ul{
 	width: 7em;
 }
 
-.usuario_h{
-    display: inline-block;
-    color: #FFF;
-    font-weight: bold;
-    vertical-align: top;
-    margin-left: 4%;
-}
-
-.usuario_h img{
-	height: auto;
-	width: 5.8em;
-    border-radius: 3.5em;
-}
-
 .menu_h{
-	margin-top: 6%;
-	margin-bottom: 4%;
-	color: #FFF;
+    background-color: #0A99C3;
+    margin: 6% auto 0;
+	padding: 2% 0 2%;
+    width: 96%;
+    transition: width 0.3s ease-out 0.2s;
 }
 
-.menu_h h2{
-    display: inline;
+.menu_h:hover{
+	background-color: #73C5D9;
+    width: 100%;
+}
+
+.menu_h h2{    
     font-size: 1.4em;
-}
-
-.menu_h ul{
-	left: 0;
+    padding: 2% 0;
 }
 
 .icono{
-	width: 30%;
-    margin-left: 2%;
     text-align: center;
-    height: auto;
-    display: inline-block;
 }
 
-.menu_h ul li{	
-	background-color: #0A99C3;
-	vertical-align: top;	
-	height: cover;
-    text-align: left;
-    margin-bottom: 1%;
-	padding: 2% 0 2%;
+.icono img{
+	width: 20%;
 }
 
-.menu_h ul li:hover{
-	background-color: #73C5D9;
+.nombre_munic{    
+    font-size: 2em;
+}
+
+.nombre_munic h1{
+    width: 50%;
+    padding: 1% 0;    
+    margin: auto;
+    background: #FFF;
+    color: #0378A6;
+    font-weight: bold;
+    border-radius: 2em;
+    font-size: 0.8em;
 }
 
 .slider_h{
-    margin: 3% auto 1%;
+    margin: 0 auto 1%;
+    padding: 2% 0 
 }
 
 .cambio{ 
 	position: relative;
 	background-color: #0378A6;
- 	height: 20em;	
+ 	height: 12em;
+    color: #FFF;
+    padding: 2% 2% 0;
 }
 
-.cambio img{ 
-	width: 100%;
-	height: auto;
+.item_h{
+    
+}
+
+.user_h{
+    position: relative;
+    display: inline-block;
+    padding-top: 4%;
+}
+
+.user_h ul li{
+    margin: 5px 0 0;
+    
+}
+
+.user_h img{
+    width: 40px;
+    border-radius: 20px;
+    cursor: pointer;
 }
 
 .corpo_info_h{
 	background-color: #0378A6;
-	color: #FFF;
-	width: 94%;
-    height: 60px;
-	margin: 4px auto 0;
+    position: fixed;
+    bottom: 0;	
+	width: 100%;
     text-align: center;
+    z-index: 50;
 }
 
-.corporativa_h{
-    display: inline-block;
-    margin-top: 20px;
-    margin-right: -10%;
-    position: relative;
-}
-
-.botones_h{
-    display: inline-block;
-    float: right;
-    width: 160px;
-    margin-top: 0.65%;
-}
-
-.botones_h li{
-	margin-left: 1%;
-	display: inline;
-}
-
-.botones_h li img{
-	width: 40px;
-	transition: width 0.3s ease-out 0.2s;
-}
-
-.botones_h li img:hover{
-	width: 50px;
+.corpo_info_h p{
+    color: #FFF;
+    margin: 1% 0;
 }
 
 /* ------------------------------ ESTILOS VISTA 1 ------------------------------ */
 
-.botones_v1{
-	text-align: right;
-	position: absolute;
-	width: 500px;
-	right: 2%;
-}
-
-.datos_v1{	
-	color: #FFF;
-	display: inline-block;
-	vertical-align: top;
-	font-weight: bold;
-	font-size: 17px;
-	margin-right: 6px;
-}
-
-.botones_v1 img{
-	display: inline-block;
-    background: #024059;
-	margin-left: 8px;
-	vertical-align: middle;
-    width: 53px;
-}
-
-.botones_v1 img:hover{
-	background: #73C5D9;
-}
-
-.botones_v img{
-	width: 53px;
-	display: inline-block;
-    background: #024059;
-	vertical-align: top;
-	margin-left: 2px;
-}
-
-.botones_v img:hover{
-	background: #73C5D9;
-}
-
 .contenedor_v1{  	
   	width: 96%;
-  	margin: 20px auto 0;	
+  	margin: auto;
 }
 
+/* ++++++ inicio pestañas ++++++ */
 .contenedor_v1 li { 
 	list-style: none; 
 	float: left; 
 }
 
 .contenedor_v1 ul a{
-  	display: block;
-  	padding: 8px 14px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  	padding: 10px 14px;
   	text-decoration: none;
   	margin: 1px 1px 0px;
 	border-bottom: 1px solid #73C5D9;
@@ -559,10 +481,10 @@ ul{
   	border-bottom: 1px solid #024059;
   	cursor: default;
 }
+/* ++++++ final pestañas ++++++ */
+
 .contenedor_v1 div{
   	padding: 10px 10px 8px 10px;
-  	*padding-top: 3px;
-  	*margin-top: -15px;
   	clear: left;
   	background: #024059;
 	color: #FFF;
@@ -588,6 +510,7 @@ ul{
 .contenedor_v1 .item_v1{	
 	padding: 14px 12px;
 	background-color: #0A99C3;
+    transition: all 0.6s ease-out;
 	margin-bottom: 8px;
 	font-size: 1.5em;
     text-align: left;
@@ -604,97 +527,33 @@ ul{
     vertical-align: text-bottom;
 }
 
-.contenedor_v1 .miga_v1{
-	background-color: #FFF;
-	color: #024059;
-	text-align: left;
-	padding: 10px 20px;
-}
-
 
 /* ------------------------------ ESTILOS VISTA 1A ------------------------------ */
 
-
-/* ----
-#pestana_v1a{
-    margin: 2% auto;
-    background: #024059;
-}
----- */
-
 .contenedor_v1a{  	
   	width: 96%;
-  	margin: 10px auto 0;	
+  	margin: 2.5% auto 0;
+    padding: 1.5%;
+    background: #024059;
 }
 
-.interior_v1a{
-    width: 98%;
-    margin: auto;
+.grupov1a div{
+    margin: 2% 0;
 }
 
-.contenedor_v1a li { 
-	list-style: none; 
-	float: left; 
-}
-
-.contenedor_v1a ul a{
-  	display: block;
-  	padding: 8px 14px;
-  	text-decoration: none;
-  	margin: 1px 1px 0px;
-	border-bottom: 1px solid #73C5D9;
-  	margin-left: 0;
-  	color: #024059;
-  	background: #73C5D9;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.contenedor_v1a ul a:hover{
-  	color: #024059;
-  	background: #FFF;
-}
-
-.contenedor_v1a ul a.selected{
-  	margin-bottom: 0;
-  	color: #FFF;
-  	background: #024059;
-  	border-bottom: 1px solid #024059;
-  	cursor: default;
-}
-.contenedor_v1a div{
-  	padding: 10px 10px 8px 10px;
-  	*padding-top: 3px;
-  	*margin-top: -15px;
-  	clear: left;
-  	background: #024059;
-	color: #FFF;
-}
-
-.contenedor_v1a div {
-  	text-align: justify;
-}
-
-.descrip_v1a{    
+.contenedor_v1a .item_v1a{
+    display: flex;
+    justify-content: center;
+    align-content: center;
     text-align: center;
-     margin-top: -1.5%;
-}
-
-.titul_v1a{
-    font-size: 150%;
-    font-weight: bold;
-   
-}
-
-.contenedor_v1a .item_v1a{	
-	padding: 10px;
-    height: 7em;
+    flex-direction: column;
+    height: 100%;
+	padding: 4% 1%;
 	background: #0A99C3;
-	margin-bottom: 8px;
 	font-size: 1.5em;
-    text-align: center;
+    transition: all 0.6s ease-out;
 }
+
 .item_v1a:hover{
 	background-color: #FFF;
 	color: #0A99C3;
@@ -714,89 +573,28 @@ ul{
     margin: 4% 0 2%;
 }
 
-.contenedor_v1a .miga_v1a{
-	background-color: #FFF;
-	color: #024059;
-	text-align: left;
-	padding: 10px 20px;
-}
-
-
 /* ------------------------------ ESTILOS VISTA 1B ------------------------------ */
-
-/* ----
-#pestana_v1b{
-    margin: 2% auto;
-    background: #024059;
-}
----- */
 
 .contenedor_v1b{  	
   	width: 96%;
-  	margin: 20px auto 0;	
-}
-
-.interior_v1b{
-    width: 98%;
-    margin: auto;
-}
-
-
-.contenedor_v1b li { 
-	list-style: none; 
-	float: left; 
-}
-
-.contenedor_v1b ul a{
-  	display: block;
-  	padding: 8px 14px;
-  	text-decoration: none;
-  	margin: 1px 1px 0px;
-	border-bottom: 1px solid #73C5D9;
-  	margin-left: 0;
-  	color: #024059;
-  	background: #73C5D9;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;
-}
-
-.contenedor_v1b ul a:hover{
-  	color: #024059;
-  	background: #FFF;
-}
-
-.contenedor_v1b ul a.selected{
-  	margin-bottom: 0;
-  	color: #FFF;
-  	background: #024059;
-  	border-bottom: 1px solid #024059;
-  	cursor: default;
-}
-.contenedor_v1b div{
-  	padding: 10px 10px 8px 10px;
-  	*padding-top: 3px;
-  	*margin-top: -15px;
-  	clear: left;
-  	background: #024059;
-	color: #FFF;
-}
-
-.contenedor_v1b div {
-  	text-align: justify;
+  	margin: 2% auto 0;
+    padding: 2% 2% 3%;
+    background: #024059;
 }
 
 .descrip_v1b{    
     text-align: center;
+    margin: 0.5% auto 3%;
 }
 
 .titul_v1b{
     font-size: 200%;
     font-weight: bold;
+    color: #FFF;
 }
 
 .menu_v1b{
-    margin-top: -1.5%;
+    
 }
 
 .contenedor_v1b .item_v1b{	
@@ -806,6 +604,7 @@ ul{
 	font-size: 1.5em;
     text-align: left;
     vertical-align: middle;
+    transition: all 0.6s ease-out;
 }
 
 .contenedor_v1b .item_v1b:hover{
@@ -819,31 +618,24 @@ ul{
     vertical-align: middle;
 }
 
-.contenedor_v1b .miga_v1b{
-	background-color: #FFF;
-	color: #024059;
-	text-align: left;
-	padding: 10px 20px;
-}
-
-
-
 /* ------------------------------ ESTILOS VISTA 2 ------------------------------ */
 
 .contenedor_v2{  	
   	width: 96%;
-  	margin: 20px auto 0;
-	padding-top: 20px;
-	background-color: #024059;
-	padding-bottom: 3%; /*distancia entre menu derecho y miga de pan */
+  	margin: 2% auto;
+	padding: 2% 1%;
+	background: #024059;
+    color: #FFF;
+    text-align: center;
 }
 
 .contenedor_v2 ul{ 
 	vertical-align: top;
-  	width: 50%;
 	display: inline-block;
+    width: 100%;
 }
 
+/* ++++++ inicio pestañas ++++++ */
 .contenedor_v2 ul a{
   	display: block;
   	padding: 14px 14px;
@@ -852,7 +644,8 @@ ul{
   	color: #FFF;
   	background: #0378A6;
 	font-size: 20px;
-	text-align: left;
+	text-align: left;      
+    transition: all 0.6s ease-out;
 }
 
 .contenedor_v2 ul a:hover{
@@ -874,50 +667,52 @@ ul{
     vertical-align: middle;
     margin-right: 4%;
 }
+
 .selector_v2{
     display: inline-block;
     vertical-align: middle;
 }
+/* ++++++ final pestañas ++++++ */
 
-.contenedor_v2 div{
-  	display: inline-block;
-	width: 48%; 
-	color: #FFF;
-	text-align: center
+.descrip_v2{	
+  	width: 100%;    
+	padding: 3% 2% 4%;
+    margin: 2px auto 4%;
+  	background: #73C5D9;
+    color: #024059;
 }
 
-.contenedor_v2 div .descrip_v2{	
-  	width: 92%;
-	padding: 10px 10px 20px;
-	margin: 0 auto 10px;	
-  	background-color: #73C5D9;
-	text-align: justify;
-	color: #024059;
+.descrip_v2 h3{
+  	margin: 0 auto 8px;
 }
 
-.contenedor_v2 div h3{
-  	margin: 2px 0 8px;
+.descrip_v2 p{
+  	text-align: justify;
+    margin: 1.5% 2% 3%;
 }
 
-.contenedor_v2 div .menu_v2{
-	margin: 10px 0 10px;
-  	display: inline-block;
-	vertical-align: top;
+.menu_v2{
+	margin: 10px auto 10px;
 	width: 100%;	
+    padding: 0;
 }
 
-.contenedor_v2 .menu_sub_v2{
-	width: 100%;
-	display: inline-block;
+.menu_sub_v2{
+	width: 45%;
+	display: inline;
 	vertical-align: top;
 }
 
 .contenedor_v2 .item_v2{
 	font-weight: bold;
 	text-align: center;
+    width: 48%;
+    display: inline-block;
 	padding: 6px 0;
-	background-color: #024059;
-	margin-bottom: 8px;
+	background: #024059;
+	margin-bottom: 8px;        
+    color: #FFF;
+    transition: all 0.6s ease-out;
 }
 
 .contenedor_v2 .item_v2:hover{
@@ -930,98 +725,25 @@ ul{
 	text-align: center;
 	padding: 6px 0;
 	background-color: #024059;
-	margin-bottom: 8px;
+	margin: 2px auto 8px;
 	width: 96.5%;
+    transition: all 0.6s ease-out;
+}
+
+.contenedor_v2 .itemlargo_v2{	
+	font-weight: bold;
+	text-align: center;
+	padding: 6px 0;
+	background-color: #024059;
+	margin: 2px auto 8px;
+	width: 96.5%;
+    transition: all 0.6s ease-out;
 }
 
 .contenedor_v2 .itemlargo_v2:hover{
 	background-color: #FFF;
 	color: #024059;
 }
-
-.miga_v2{
-	background-color: #FFF;
-	color: #024059;
-	margin: 0 2%;
-	text-align: left;
-	padding: 10px 20px;	
-}
-
-/* ------------------------------ ESTILOS VISTA 3 ------------------------------ */
-
-.contenedor_v3{  	
-  	width: 96%;
-  	margin: 20px auto 0;
-	padding-top: 20px;
-	background-color: #024059;
-	padding-bottom: 3%; /*distancia entre menu derecho y miga de pan */
-}
-
-.menu_v3{
-	width: 94%;
-	margin: 2% auto 0;
-}
-
-.flecha_item_v3{
-	float: right;
-	margin-right: 1%;
-}
-
-.subitem_v3 li{
-	background-color: #FFF;
-	margin: 1% 1%;
-	width: 300px;
-	padding: 10px 0;
-	font-weight: bold;
-	display: inline-block;
-}
-
-.subitem_v3 li a{
-	text-decoration: none;
-	color: #024059;
-	font-size: 22px;
-	vertical-align: middle;
-}
-
-.subitem_v3 li img{
-	width: 24px;
-}
-
-input[id^="item_v3"]{
- 	display: none;
-}
-
-input[id^="item_v3"] + label {
-    display: block;
-    width: 100%;
-    margin: 0 auto;
-    padding: 12px 0;
-    background-color: #0378A6;
-	color: #FFF;
-	font-weight: bold;
-	font-size: 24px;
-    text-align: center;
-    cursor: pointer;
-    transition: all .6s;
-}
-
-input[id^="item_v3"]:checked + label {
-   height: auto;
-}
-
-input[id^="item_v3"] ~ .item_v3 {
-    width: 100%;
-    height: 0;
-    overflow: hidden;    
-    margin: 0 auto 1%;
-	text-align: center;
-    background-color: #0378A6;
-}
-
-input[id^="item_v3"]:checked + label + .item_v3{
-    height: auto;
-}
-
 
 /* ------------------------------ ESTILOS VISTA 3A ------------------------------ */
 
@@ -1030,23 +752,30 @@ input[id^="item_v3"]:checked + label + .item_v3{
   	margin: 5px auto 0;	
 }
 
+/* ++++++ inicio pestañas ++++++ */
 .contenedor_v3a li { 
-	list-style: none; 
+    list-style: none; 
 	float: left; 
+    margin-right: 1px;
 }
 
 .contenedor_v3a ul a{
-  	display: block;
-  	padding: 8px 14px;
+  	display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  	padding: 10px 14px;
   	text-decoration: none;
   	margin: 1px 1px 0px;
 	border-bottom: 1px solid #73C5D9;
   	margin-left: 0;
   	color: #024059;
-  	background-color: #73C5D9;
+  	background: #73C5D9;
 	font-size: 16px;
 	font-weight: bold;
-	text-align: center;    
+	text-align: center;
     border-radius: 10px 10px 0 0;
 }
 
@@ -1062,27 +791,29 @@ input[id^="item_v3"]:checked + label + .item_v3{
   	border-bottom: 1px solid #024059;
   	cursor: default;
 }
+/* ++++++ final pestañas ++++++ */
+
 .contenedor_v3a div{
   	padding: 10px 10px 8px 10px;
-  	*padding-top: 3px;
-  	*margin-top: -15px;
   	clear: left;
   	background: #024059;
 	color: #FFF;
 }
 
-.contenedor_v3a .miga_v3a{
-	background-color: #FFF;
-	color: #024059;
-	text-align: left;
-	padding: 10px 20px;
+.uno_area1{
+    text-align: center;
 }
 
-.area1_tab1{
-    margin-left: 2%;
+.uno_area1 img{
+    width: 80%;
 }
 
-.area1_tab1 p{
+
+.uno_area2{
+    margin: auto;
+} 
+
+.uno_area2 p{
     background: #0378A6;
     text-align: justify;
     padding: 4% 8%;
@@ -1090,17 +821,13 @@ input[id^="item_v3"]:checked + label + .item_v3{
     font-weight: bold;
 }
 
-.area2_tab1{
+
+dos_area1{
     text-align: center;
 }
 
-.area2_tab1 img{
+dos_area1 img{
     width: 80%;
-}
-
-
-.area1_tab2{
-    
 }
 
 .icon_tab2{
@@ -1109,6 +836,7 @@ input[id^="item_v3"]:checked + label + .item_v3{
     margin-right: 2%;
 }
 
+/* ++++++ inicio desplegable ++++++ */
 input[id^="item_tab2"]{
  	display: none;
 }
@@ -1141,6 +869,7 @@ input[id^="item_tab2"] ~ .item_tab2 {
 input[id^="item_tab2"]:checked + label + .item_tab2{
     height: auto;
 }
+/* ++++++ final desplegable ++++++ */
 
 .text_tab2{
     font-family: 'Lato', sans-serif;
@@ -1151,17 +880,7 @@ input[id^="item_tab2"]:checked + label + .item_tab2{
     padding-left: 10px;
 }
 
-
-
-.area1_tab3{
-    
-}
-
-.area2_tab3{
-   
-}
-
-.area1_tab3 span, .area2_tab3 span{
+.tres_area1 span, .tres_area2 span{
     font-size: 1.75em;
     font-weight: bold;
     display: block;
@@ -1172,7 +891,7 @@ input[id^="item_tab2"]:checked + label + .item_tab2{
     text-align: center;
 }
 
-.grafic_area2_tab3 img{
+.grafico_tres_area2 img{
     width: 60%;
     height: auto;
 }
@@ -1211,87 +930,43 @@ input[id^="item_tab2"]:checked + label + .item_tab2{
     cursor: pointer;
 }
 
-.area1_tab4{
+.cuatro_area1{
     width: 98%;
     margin: auto;
 }
 
-.titul_tab4{
+.titul_cuatro{
     font-size: 1.75em;
     margin-left: 2%;
     font-weight: bold;
     display: block;
 }
 
-.subtitul_tab4{
+.subtitul_cuatro{
     font-size: 1.5em;
     margin-left: 2%;
     font-weight: bold;
     display: block;
 }
 
-.tabla { 
-    width: 96%; 
-    border-collapse: collapse;
-    margin: auto;
-}
-
-/* inicio para colores intercaldos entre filas */
-tr { 
-    background: #FFF; 
-    color: #024059;  
-}
-
-tr:nth-of-type(odd) { 
-    background: #CCE3E9; 
-    color: #024059; 
-}
-/* final para colores intercaldos entre filas */
-
-.icon-tb1_v3a{
-    position: relative;
-    float: right;
-}
-
-th { 
-    background: #0378A6;; 
-    color: #FFF; 
-    font-weight: bold; 
-    padding: 6px; 
-    border-left: 1px solid #73C5D9;
-    border-right: 1px solid #73C5D9;
-    text-align: left;
-}
-th:hover { 
-    cursor: pointer;
-    background: #FFF;
-    color: #024059;
-}
-
-td { 
-    padding: 6px; 
-    border-left: 1px solid #73C5D9;
-    border-right: 1px solid #73C5D9;
-    text-align: left; 
-}
-
-
 /* ------------------------------ ESTILOS VISTA 3B ------------------------------ */
 
 .contenedor_v3b{  	
   	width: 96%;
-  	margin: 20px auto 0;
-	padding-top: 20px;
-	background-color: #024059;
-	padding-bottom: 3%; /*distancia entre menu derecho y miga de pan */
+  	margin: 4% auto;
+	padding: 2% 1%;
+	background: #024059;
+    color: #FFF;
+    text-align: center;
 }
 
 .contenedor_v3b ul{ 
 	vertical-align: top;
-  	width: 50%;
 	display: inline-block;
+    width: 100%;
 }
 
+/* ++++++ inicio pestañas ++++++ */
 .contenedor_v3b ul a{
   	display: block;
   	padding: 14px 14px;
@@ -1300,7 +975,8 @@ td {
   	color: #FFF;
   	background: #0378A6;
 	font-size: 20px;
-	text-align: left;
+	text-align: left;    
+    transition: all 0.6s ease-out;
 }
 
 .contenedor_v3b ul a:hover{
@@ -1322,20 +998,13 @@ td {
     vertical-align: middle;
     margin-right: 4%;
 }
+/* ++++++ final pestañas ++++++ */
 
-.contenedor_v3b div{
-  	display: inline-block;
-	width: 48%; 
-	color: #FFF;
-	text-align: center;
-    padding-top: 4%;
-}
-
-.contenedor_v3b div .descrip_v3b{	
-  	width: 92%;    
+.descrip_v3b{	
+  	width: 100%;    
 	padding: 10px 10px 20px;
-	margin: 0 auto 10px;	
-  	background-color: #0378A6;
+	margin: 7% auto 0;	
+  	background: #0378A6;
 }
 
 .formu_v3b{
@@ -1360,358 +1029,3 @@ td {
     height: 35px;
     margin-top: 2%;
 }
-
-.miga_v3b{
-	background-color: #FFF;
-	color: #024059;
-	margin: 0 2%;
-	text-align: left;
-	padding: 10px 20px;	
-}
-
-
-/* ------------------------------ ESTILOS VISTA 4 ------------------------------ */
-
-.contenedor_v4{  	
-  	width: 96%;
-  	margin: 20px auto 0;	
-}
-
-.contenedor_v4 li { 
-	list-style: none; 
-	float: left; 
-}
-
-.contenedor_v4 ul a{
-  	display: block;
-  	padding: 8px 14px;
-  	text-decoration: none;
-  	margin: 1px 1px 0px;
-	border-bottom: 1px solid #73C5D9;
-  	margin-left: 0;
-  	color: #024059;
-  	background-color: #73C5D9;
-	font-size: 16px;
-	font-weight: bold;
-	text-align: center;    
-    border-radius: 10px 10px 0 0;
-}
-
-.contenedor_v4 ul a:hover{
-  	color: #024059;
-  	background: #FFF;
-}
-
-.contenedor_v4 ul a.selected{
-  	margin-bottom: 0;
-  	color: #FFF;
-  	background: #024059;
-  	border-bottom: 1px solid #024059;
-  	cursor: default;
-}
-.contenedor_v4 div{
-  	padding: 10px 10px 8px 10px;
-  	*padding-top: 3px;
-  	*margin-top: -15px;
-  	clear: left;
-  	background: #024059;
-	color: #FFF;
-}
-
-.contenedor_v4 div h3{
-  	margin: 14px 0 4px;
-}
-
-.contenedor_v4 div {
-  	text-align: justify;
-}
-
-.contenedor_v4 .menu_v4{
-	width: cover;
-	position: static;
-	margin-bottom: 5%; /*distancia entre boton documentacion y miga de pan */
-}
-
-.contenedor_v4 .menu_sub_v4{
-	width: 48%;
-	display: inline-block;
-	vertical-align: top;
-}
-
-.contenedor_v4 .item_v4{	
-	padding: 14px 12px;
-	/*background-color: #0A99C3;*/
-    background: green;
-	margin-bottom: 8px;
-	font-size: 1.6em;
-}
-
-.contenedor_v4 .item_v4:hover{
-	background-color: #FFF;
-	color: #0A99C3;
-}
-
-.contenedor_v4 .menu_v4 .item2_v4{
-	background-color: #FFF;
-	color: #024059;
-	text-align: center;
-	width: 280px;
-	height: 30px;
-	margin: auto;
-	font-size: 24px;
-}
-
-.contenedor_v4 .miga_v4{
-	background-color: #FFF;
-	color: #024059;
-	text-align: left;
-	padding: 10px 20px;
-}
-
-.cont_item{
-    margin: 1% 2%;
-    text-align: center;
-}
-
-#item1a, #item1b{
-  	position: relative;
-}
-
-#item1a{
-	background-color: #0378A6;
-	text-align: center;
-}
-
-#item1b{	
-	margin: auto;
-	text-align: center;
-    background-color: #73C5D9;
-	color: #024059;
-}
-
-/*#item1a img, #item1b img{/*
-	display: inline-block;
-	width: 18px;
-	margin-left: 0.5%;
-	vertical-align: middle;
-	float: right;
-} esltilo de las flechas desplegables*/
-
-#item1a p, #item1b p{
-	margin-bottom: 1%;
-	font-weight: bold;
-	display: inline-block;
-	vertical-align: middle;
-	width: 90%;
-}
-
-#result{
-  	background-color: #FFF;
-	color: #024059;
-	width: 98%;
-	margin: 2% auto 0.2%;
-	text-align: center;
-	padding: 1%;
-}
-
-#result p{
-	font-weight: bold;
-	vertical-align: middle;
-	width: 100%;
-}
-
-/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- @MEDIA QUERIES -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+- */
-
-@media screen and (max-width:1024px) {
-	
-	
-/* ---- COMPARTIDOS ---- */
-	.titulo_v{
-		width: 10%;		
-		margin-right: 1%;
-	}
-
-	.flecha{
-		width: 40px;
-	}
-	.retorno{
-		padding: 15px 4px;
-		font-size: 1.2em;
-		margin-left: 2px;
-	}	
-	.botones_v img{
-		width: 43px;
-		margin-left: 2px;
-	}
-	.datos_v{
-		padding-top: 3px;
-		font-size: 16px;
-	}
-	
-	
-/* ---- HOME ---- */
-	.menu_h h2{
-		font-size: 100%;
-	}
-	.encabezado_h{
-		font-size: 80%;
-	}
-	
-/* ---- VISTA1 ---- */
-	.contenedor_v1 .menu_sub_v1{
-		width: 47%;
-		font-size: 80%;
-	}
-/* ---- VISTA2 ---- */		
-	.titulo_v{
-		margin-right: 1%;
-		width: 40%;
-	}
-}
-
-@media screen and (max-width:855px) {
-	
-/* ---- COMPARTIDOS ---- */
-	.encabezado_v{
-		text-align: center;
-		margin: 2% auto 4%;
-	}
-	.titulo_v{
-		width: 90%;
-		margin: auto;
-	}	
-	.botones_v{
-		width: 98%;
-		float: left;
-		margin: 1% 0 2% 1%;
-	}
-	.datos_v{
-		padding-top: 3px;
-		font-size: 16px;
-		text-align: right;
-	}
-	
-/* ---- HOME ---- */	
-	.subconten1_h{
-		width: 100%;		
-	}
-	.subconten2_h{
-		width: 100%;
-	}
-	.encabezado_h{
-		font-size: 50%;
-	}
-	.user_h{
-		width: 70%;
-		margin-bottom: 0;
-	}
-	
-/* ---- VISTA1 ---- */	
-	.contenedor_v1 .menu_sub_v1{
-		width: 100%;		
-		font-size: 90%;
-	}	
-	.datos_v1{
-		visibility: hidden;
-		height: 0;
-	}
-	
-/* ---- VISTA1 ---- */
-.contenedor_v2{
-		margin-top: 8%; 
-	}
-	
-}
-
-
-
-/* ---- ESTILOS PARA LA TABLA V3A----  */
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 800px)  {
-
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid #ccc; }
-	
-	td { 
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-	
-	td:before { 
-		position: absolute;
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
-    
-	td:nth-of-type(1):before { content: "Actividades:"; }
-	td:nth-of-type(2):before { content: "Cumplimiento:"; }
-	td:nth-of-type(3):before { content: "Fuente:"; }
-	td:nth-of-type(4):before { content: "Valor Fuente:"; }
-    td:nth-of-type(5):before { content: "Evidencia:"; }
-	td:nth-of-type(6):before { content: "Revisión:"; }
-}
-
-@media screen and (max-width:600px) {
-	
-/* ---- COMPARTIDOS ---- */
-	.encabezado_v{
-		text-align: center;
-	}
-	.titulo_v{
-		width: 100%;
-		margin-bottom: 6px;
-	}	
-	.botones_v img{
-		width: 43px;
-		margin-left: 2px;
-	}
-	.datos_v{
-		padding-top: 3px;
-		font-size: 16px;
-		text-align: right;
-	}
-	
-/* ---- HOME ---- */	
-	.subconten1_h{
-		width: 100%;		
-	}
-	.subconten2_h{
-		width: 100%;
-	}
-	.encabezado_h{
-		font-size: 50%;
-	}
-	.user_h{
-		width: 70%;
-		margin-bottom: 0;
-	}
-	
-/* ---- VISTA1 ---- */	
-	.contenedor_v1 .menu_sub_v1{
-		width: 100%;		
-		font-size: 90%;
-	}	
-	.datos_v1{
-		visibility: hidden;
-		height: 0;
-	}
-
-	
-}
-
-

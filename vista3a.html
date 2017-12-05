@@ -5,38 +5,59 @@
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
   <title>vista3a</title>
   <link rel="stylesheet" href="css/superslides.css">
-  <link rel="stylesheet" href="css/sp.css">
-  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">  
-  <link rel="stylesheet" href="css/style.css">  
+  <link rel="stylesheet" href="css/sp.css">  
+  <link href="css/bootstrap.min.css" rel="stylesheet" media="screen"> 
+  <link rel="stylesheet" href="css/style.css">   
 </head>
 <body class="fondo_v">
-	<div class="encabezado_v">
-		<a class="flecha" href="vista3.html"><img src="img/flecha.svg" alt=""></a>
-		<div class="titulo_v"><img src="img/bandera.svg" alt=""> Meta Producto 1</div>
-		<div class="botones_v">
-			<div class="datos_v">
-				<div id="fecha">Jueves, 14 Setiembre de 2016</div>
-				<div id="usuario">Usuario: Usuario Ejemplo</div>
-			</div>
-			<a href="home.html"><img src="img/home.svg" alt=""></a>
-			<a href=""><img src="img/perfil.svg" alt=""></a>
-			<a href=""><img src="img/info.svg" alt=""></a>
-			<a href=""><img src="img/salir.svg" alt=""></a>
-		</div>
-	</div>
-	<div class="contenedor_v3a">		
-		<ul class="idTabs"> 
-			<li><a href="#tab1">MP 1</a></li> 
-			<li><a href="#tab2">Cargue Actividad</a></li> 
-			<li><a href="#tab3">Cumplimiento</a></li> 
-			<li><a href="#tab4">Revisión</a></li> 
-		</ul>
-		<!--1° Pestaña (MP)--> 
-		<div id="tab1">	
+  
+   <!--ENCABEZADO-->
+   <div class="contenedor_encabezado">
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-sm-6 encabezado">
+                   <!--titulo vista-->                                          
+                    <div class="titulo_v"><span class="icon-flag"><p>Meta Producto</p></span> </div>  
+               </div>
+               <div class="col-sm-6">
+                   <!--menu superior vista-->
+                    <div class="menu_general">
+                            <div class="datos_v">
+                                <div id="fecha">Jueves, 14 Setiembre de 2016</div>
+                                <div id="usuario">Usuario: Usuario Ejemplo</div>
+                            </div>                           
+                            <a href=""><img src="img/flecha.svg" title="VOLVER"  alt=""></a>
+                            <a href="home.html"><img src="img/home.svg" title="INICIO" alt=""></a>
+                            <a href=""><img src="img/perfil.svg" title="USUARIO" alt=""></a>
+                            <a href=""><img src="img/info.svg" title="INFORMACION" alt=""></a>
+                            <a href=""><img src="img/salir.svg" title="SALIR" alt=""></a>
+                    </div>
+               </div>
+           </div>   
+       </div>
+   </div> 
+        
+	    
+	<!--CONTENIDO-->   
+    <div class="contenedor_v3a">	
+    	<ul class="idTabs"> 
+			<li><a href="#uno">MP 1</a></li> 
+			<li><a href="#dos">Cargue Actividad</a></li> 
+			<li><a href="#tres">Cumplimiento</a></li> 
+			<li><a href="#cuatro">Revisión</a></li> 
+		</ul> 
+		
+		<!--1° item--> 
+		<div id="uno">	
             <div class="container-fluid">
-                <div class="row">
+                <div class="row">                   
+                    <div class="col-md-6 verde">
+                        <div class="uno_area1"> 
+                          <img src="img/g_barras.png" alt="">
+                        </div>
+                    </div>
                     <div class="col-md-6">
-                        <div class="area1_tab1">
+                        <div class="uno_area2">
                           <p>META PRODUCTO: VINCULAR A UN 50% DURANTE EL CUATRENIO EL NUMERO DE PERSONAS SIN  ASEGURAMIENTO (IDENTIFICADAS) EN SALUD AL SISTEMA GENERAL DE SEGURIDAD SOCIAL EN  SALUD (2.533 PERSONAS NO AFILIADAS) 
 				          <br><br>TIPO META: INCREMENTO
 				          <br><br>INDICADOR: NUMERO DE PERSONAS AFILIADAS AL SGSSSA
@@ -44,21 +65,23 @@
                           <br><br>VALOR LOGRADO 2016: 1850</p>
                         </div>
                     </div>
-                    <div class="col-md-6 verde">
-                        <div class="area2_tab1"> 
-                          <img src="img/g_barras.png" alt="">
-                        </div>
-                    </div>
                 </div>
             </div>	    	
 		</div>
 		
-		<!--2° Pestaña (Cargue Actividad)-->  
-		<div id="tab2">
+		<!--2° item-->  
+		<div id="dos">
 		    <div class="container-fluid">
                 <div class="row">
-                    <div class="col-md-8">
-                        <div class="area1_tab2">
+                    <div class="col-md-6">
+                        <div class="dos_area1">
+                         
+                         <!--Para agregar mas desplegables copie el codigo del primero 
+                         y cambie el nombre id del input y el for del label mateniendo 
+                         "item_tab2 " pero cambiando la letra del final para ambos 
+                         por ejemplo: id="item_tab2x" y for="item_tab2x" -->
+                         
+                         
                           <!--1º desplegable-->
                            <input type="checkbox"  id="item_tab2a" /> 
                            <label for="item_tab2a">
@@ -73,7 +96,8 @@
                                  </form>
                               </div>
                              </div>
-                          <!--1º desplegable-->
+                             
+                          <!--2º desplegable-->
                            <input type="checkbox"  id="item_tab2b" /> 
                            <label for="item_tab2b">
                                Seleccionar Actividad Ejecutada
@@ -94,12 +118,12 @@
             </div>					
 		</div>
 		
-		<!--3° Pestaña (Cumplimiento)-->  
-		<div id="tab3">	
+		<!--3° item-->  
+		<div id="tres">	
 		    <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-6">
-                        <div class="area1_tab3">
+                        <div class="tres_area1">
                            <span>Meta producto 1: xxxxxxx</span>
                            <form action="">
                            <label class="etiq_v3a" for="">Seleccionar actividad plan de acción</label><br>
@@ -127,10 +151,10 @@
                         </div>
                     </div>
                     <div class="col-md-6 verde">
-                        <div class="area2_tab3"> 
+                        <div class="tres_area2"> 
                              <span>Indicador valor 1: xxxxxxx</span>
                              <span>Valor programado indicador 1: 1</span>
-                             <div class="grafic_area2_tab3">
+                             <div class="grafico_tres_area2">
                                  <span>Población georeferenciada</span>
                                  <img src="img/georeferncia.jpg" alt="">
                              </div>                             
@@ -140,84 +164,23 @@
             </div>					
 		</div>
 		
-		<!--4° Pestaña (Revisión)-->  
-		<div id="tab4">
+		<!--4° item-->  
+		<div id="cuatro">
 		    <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-12">
-                        <span class="titul_tab4">Revisión de actividades de corte</span>
+                        <span class="titul_cuatro">Revisión de actividades de corte</span>
                         <br>
-                        <span class="subtitul_tab4">Meta producto 1: xxxxxxx</span>
-                        <span class="subtitul_tab4">Indicador 1: xxxxxxx</span>
-                        <span class="subtitul_tab4">Valor programado indicador 1: 1</span>
+                        <span class="subtitul_cuatro">Meta producto 1: xxxxxxx</span>
+                        <span class="subtitul_cuatro">Indicador 1: xxxxxxx</span>
+                        <span class="subtitul_cuatro">Valor programado indicador 1: 1</span>
                     </div>
                     <div class="col-md-12">
-                       <table id="tb1_v3a" class="tabla">
-                          <thead>
-                            <tr>
-                              <th>
-                                  <span>Actividades</span>
-                                  <span class="icon-move-down icon-tb1_v3a"></span>
-                              </th>
-                              <th>
-                                  <span>Cumplimiento</span>
-                                  <span class="icon-move-down icon-tb1_v3a"></span>
-                              </th>
-                              <th>
-                                  <span>Fuente</span>
-                                  <span class="icon-move-down icon-tb1_v3a"></span>
-                              </th>
-                              <th>
-                                  <span>Valor Fuente</span>
-                                  <span class="icon-move-down icon-tb1_v3a"></span>
-                              </th>
-                              <th>
-                                  <span>Evidencia</span>
-                                  <span class="icon-move-down icon-tb1_v3a"></span>
-                              </th>
-                              <th>
-                                  <span>Revisión</span>
-                                  <span class="icon-move-down icon-tb1_v3a"></span>
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td class="align-left">Actividad 1</td>
-                              <td>Cumplimiento 1</td>
-                              <td>Fuente 1</td>
-                              <td>Valor Fuente 1</td>
-                              <td>Evidencia 1</td>
-                              <td>Revisión 1</td>
-                            </tr>
-                            <tr>
-                              <td class="align-left">Actividad 2</td>
-                              <td>Cumplimiento 2</td>
-                              <td>Fuente 2</td>
-                              <td>Valor Fuente 2</td>
-                              <td>Evidencia 2</td>
-                              <td>Revisión 2</td>
-                            </tr>
-                            <tr>
-                              <td class="align-left">Actividad 3</td>
-                              <td>Cumplimiento 3</td>
-                              <td>Fuente 3</td>
-                              <td>Valor Fuente 3</td>
-                              <td>Evidencia 3</td>
-                              <td>Revisión 3</td>
-                            </tr>
-                            <tr>
-                              <td class="align-left">Actividad 4</td>
-                              <td>Cumplimiento 4</td>
-                              <td>Fuente 4</td>
-                              <td>Valor Fuente 4</td>
-                              <td>Evidencia 4</td>
-                              <td>Revisión 4</td>
-                            </tr>
-                          </tbody>
-                        </table>                        
+                       <table>
+                           <tr>-------------------espacio para tabla---------------------</tr>
+                       </table>                      
                         
-                        <div class="area1_tab4">
+                        <div class="cuatro_area1">
                             <form action="">
                                 <label class="etiq_v3a" for="">Observaciones:</label><br>
                                 <textarea rows="4" class="obser_v3a" placeholder="Texto descriptivo de ayuda"></textarea>
@@ -228,20 +191,15 @@
                 </div>
             </div>	    							
 		</div>
-			
-		<div class="miga_v3a">Eje1 / Sector1 / Programa1 / MP 1</div>				
+		
+		 					
 	</div>
 	
- 	<div class="corpo_info">INFORMACION CORPORATIVA</div>
+	<!--PIE DE PAGIINA-->
+	<div class="corpo_info">INFORMACION CORPORATIVA</div>
  
   <script src="js/jquery-3.1.0.min.js"></script>
   <script src="js/jquery.idTabs.min.js" type="text/javascript"></script>
-  <script src="js/jquery.tablesorter.min.js" type="text/javascript"></script>
-  <script type="text/javascript">
-    $(function(){
-        $('#tb1_v3a').tablesorter(); 
-    });
-  </script>
-     
+  
 </body>
 </html>

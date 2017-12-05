@@ -6,35 +6,21 @@
   <link rel="stylesheet" href="css/superslides.css">
   <link rel="stylesheet" href="css/sp.css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css"> 
 </head>
 <body class="fondo">
   <!-- botones de arriba -->
    <div class="botonera">
-    <!-- botones menu PMD -->
-	  <div id="pdm">
-				<ul class="nav">				
-					<li><a href="">Menú PDM</a>
-						<ul>
-							<li><a href="">Así vamos con el PDM</a></li>		
-						</ul>
-					</li>
-					<li><a href="">Formulación PDM</a>
-						<ul>
-							<li><a href="">Programa de gobierno</a></li>
-							<li><a href="">Tabla sectoriales</a></li>
-							<li><a href="">Acuerdo 97 de 2016 PDM</a></li>
-							<li><a href="">Diagnostico infancia y adolencencia</a></li>
-							<li><a href="">Diagnostico PDM (2013-2016)</a></li>
-						</ul>
-					</li>				
-				</ul>
-		</div> 
        <!-- modal de ingreso -->
     	<div class="ingreso">
-    		<a href="#ir_a_modal"><img src="img/ingreso.svg" width="60px" height="60px" alt=""></a>
+    		<a href="#ir_a_modal">
+    		    <img src="img/ingreso.svg" width="60px" height="60px" alt="">
+                <p>INGRESAR</p>
+            </a>
     		<div id="ir_a_modal">
 			  <div class="modal-contenido">				
 				 <div class="bienvenida"> Bienvenido: ingrese sus datos <br> para acceder al sistema</div>
+				 <a class="cerrar" href="#"><span class="icon-circle-with-cross"></span></a>
 				  <div class="ingreso_form">
 					<form action="">
 						<label for="dni">Documento</label><br>
@@ -42,8 +28,6 @@
 
 						<label for="contrasena">Contraseña</label><br>
 						<input class="caja" type="password" id="contrasena" /><br><br>
-												
-						<a href="#"><div class="boton biselado"><div class="cerrar">CANCELAR</div></div></a>						
 						<input class="boton biselado" type="submit" value="INGRESAR" />					
 					</form>
 					
@@ -54,14 +38,6 @@
     	</div>
      </div>
     
-     <div class="logo">
- 		<img src="img/logo.svg" alt="">
- 	 </div>
- 	 
- 	 <div class="logo_municipio">
- 		<img src="img/chia.png" alt="">
- 	 </div>
- 	 
  	 <!-- inicio slider -->
  	  <div class="deslizador">
 		  	  <div id="slides">
@@ -98,6 +74,14 @@
 			 </div>
 		 </div>	
  	 <!-- final slider -->
+ 	 
+     <div class="logo">
+ 		<img src="img/logo.svg" alt="">
+ 	 </div>
+ 	 
+ 	 <a href="http://www.consultores-territoriales.com.co/" target="_blank" class="enlace_web">
+ 	 www.consultores-territoriales.com.co
+ 	 </a>
  	 
   <script src="js/jquery-3.1.0.min.js"></script>  
   <script src="js/jquery.superslides.js" type="text/javascript" charset="utf-8"></script>
