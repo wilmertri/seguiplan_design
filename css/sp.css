@@ -443,13 +443,21 @@ a:selected{
   	margin: auto;
 }
 
-/* ++++++ inicio pestañas ++++++ */
-.contenedor_v1 li { 
-	list-style: none; 
-	float: left; 
+/* ++++++ inicio pestañas background: #0378A6; ++++++ */
+.contenedor_v1 .menuvista{
+    background: #0378A6;
 }
 
-.contenedor_v1 ul a{
+.contenedor_v1 .menuvista div{
+    background: #0378A6;		
+}
+
+.contenedor_v1 .opcion{
+    background: red;
+    margin: -3% auto -2%;
+}
+
+.contenedor_v1 .opcion a{
     display: flex;
     justify-content: center;
     align-content: center;
@@ -458,27 +466,22 @@ a:selected{
     width: 100%;
   	padding: 10px 14px;
   	text-decoration: none;
-  	margin: 1px 1px 0px;
-	border-bottom: 1px solid #73C5D9;
-  	margin-left: 0;
   	color: #024059;
   	background: #73C5D9;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-    border-radius: 10px 10px 0 0;
 }
 
-.contenedor_v1 ul a:hover{
+.contenedor_v1 .opcion a:hover{
   	color: #024059;
   	background: #FFF;
 }
 
-.contenedor_v1 ul a.selected{
+.contenedor_v1 .opcion a.selected{
   	margin-bottom: 0;
-  	color: #FFF;
+  	color: #F7FE2E;
   	background: #024059;
-  	border-bottom: 1px solid #024059;
   	cursor: default;
 }
 /* ++++++ final pestañas ++++++ */
@@ -753,14 +756,21 @@ a:selected{
 }
 
 /* ++++++ inicio pestañas ++++++ */
-.contenedor_v3a li { 
-    list-style: none; 
-	float: left; 
-    margin-right: 1px;
+.contenedor_v3a .menuvista{
+    background: #0378A6;
 }
 
-.contenedor_v3a ul a{
-  	display: flex;
+.contenedor_v3a .menuvista div{
+    background: #0378A6;		
+}
+
+.contenedor_v3a .opcion{
+    background: red;
+    margin: -3% auto -2%;
+}
+
+.contenedor_v3a .opcion a{
+    display: flex;
     justify-content: center;
     align-content: center;
     flex-direction: column;
@@ -768,27 +778,22 @@ a:selected{
     width: 100%;
   	padding: 10px 14px;
   	text-decoration: none;
-  	margin: 1px 1px 0px;
-	border-bottom: 1px solid #73C5D9;
-  	margin-left: 0;
   	color: #024059;
   	background: #73C5D9;
 	font-size: 16px;
 	font-weight: bold;
 	text-align: center;
-    border-radius: 10px 10px 0 0;
 }
 
-.contenedor_v3a ul a:hover{
+.contenedor_v3a .opcion a:hover{
   	color: #024059;
   	background: #FFF;
 }
 
-.contenedor_v3a ul a.selected{
+.contenedor_v3a .opcion a.selected{
   	margin-bottom: 0;
-  	color: #FFF;
+  	color: #F7FE2E;
   	background: #024059;
-  	border-bottom: 1px solid #024059;
   	cursor: default;
 }
 /* ++++++ final pestañas ++++++ */
